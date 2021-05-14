@@ -1,27 +1,30 @@
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
   padding: 1px !important;
-  background-color: inherit !important;
-  background-image: url("image/toolbar.png");
+  background: linear-gradient(0deg, rgba(177,189,201,1) 0%, rgba(221,227,235,1) 100%) !important;
   padding-top: 2px !important;
-  border: 2px solid !important;
+  border-top: 1px solid #eef0f3 !important;
+  border-bottom: 1px solid #86929e !important;
+  /*border: 2px solid !important;
   border-top: 2px solid !important;
   border-left: 7px solid !important;
   border-image: url("image/toolbar_handle_top.png") !important;
-  border-image-slice: 2 2 2 7 !important;
+  border-image-slice: 2 2 2 7 !important;*/
 }
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   -moz-appearance: none !important;
   margin-bottom: -4px !important;
-  background-color: inherit !important;
-  background-image: url("image/toolbar.png");
+  background: linear-gradient(0deg, rgba(221,227,235,1) 0%, rgba(177,189,201,1) 100%) !important;
   padding: 1px !important;
-  border: 2px solid !important;
+  border-top: 1px solid #eef0f3 !important;
+  border-bottom: 1px solid #86929e !important;
+  /*border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;
   border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 2 2 2 7 !important; }
+  border-image-slice: 2 2 2 7 !important;*/
+}
 
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   margin-bottom: 0px !important;
@@ -29,15 +32,16 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 #toolbar-menubar {
   -moz-appearance: none !important;
-  background-color: inherit !important;
+  background-color: rgba(221,227,235,1) !important;
   padding: 0px !important;
   padding-left: 2px !important;
-  border: 2px solid !important;
+  /*border: 2px solid !important;
   border-left: 7px solid !important;
   border-right: 43px solid !important;
   border-bottom: 0px !important;
   border-image: url("image/menu_bar_handle.png") !important;
-  border-image-slice: 2 43 2 7 !important; }
+  border-image-slice: 2 43 2 7 !important;*/
+}
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
   border: none !important;
@@ -71,16 +75,17 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   bottom: 2px !important;
   width: 100vw !important;
   -moz-appearance: none !important;
+  background: linear-gradient(180deg, rgba(98,109,112,1) 0%, rgba(142,157,161,1) 25%);
   /*background-image: url("image/bottom.png") !important;*/
-  border: 2px solid !important;
+  /*border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;
   border-image: url("image/toolbar_handle.png") !important;
+  border-image-slice: 2 2 2 7 !important;*/
   padding: 0px !important;
   padding-left: 2px !important;
   min-height: 27px !important;
   max-height: 27px !important;
-  border-image-slice: 2 2 2 7 !important; 
 }
 
 #tabbrowser-tabs {
