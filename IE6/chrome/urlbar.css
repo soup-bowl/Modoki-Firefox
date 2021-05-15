@@ -18,7 +18,11 @@
 }
 
 #search-container {
-	margin-top: -5px !important;
+	margin-top: -2px !important;
+}
+
+#urlbar-container {
+	margin-top: 2px !important;
 }
 
 #searchbar {
