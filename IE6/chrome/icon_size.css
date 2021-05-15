@@ -1,35 +1,42 @@
 #back-button {
-  -moz-image-region: rect(0px, 54px, 18px, 36px) !important;
+  -moz-image-region: rect(0px, 30px, 30px, 0px) !important;
 }
 
 #forward-button	{
-  -moz-image-region: rect(0px, 72px, 18px, 54px) !important;
+  -moz-image-region: rect(0px, 60px, 30px, 30px) !important;
 }
 
 #home-button {
-  -moz-image-region: rect(0px, 126px, 18px, 108px) !important;
+  -moz-image-region: rect(0px, 150px, 30px, 120px) !important;
 }
-#stop-button{
-  -moz-image-region: rect(0px, 108px, 18px, 90px) !important;
+
+#stop-button {
+  -moz-image-region: rect(0px, 90px, 30px, 60px) !important;
 }
-#reload-button{
-  -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
+
+#reload-button {
+  -moz-image-region: rect(0px, 120px, 30px, 90px) !important;
 }
+
 #bookmarks-toolbar-placeholder,
-#bookmarks-menu-button{
-  -moz-image-region: rect(0px, 162px, 18px, 144px) !important;
+#bookmarks-menu-button {
+  -moz-image-region: rect(0px, 240px, 30px, 210px) !important;
 }
+
 #library-button {
-  -moz-image-region: rect(0px, 630px, 18px, 612px) !important;
+  -moz-image-region: rect(0px, 240px, 30px, 210px) !important;
 }
-#history-panelmenu{
-  -moz-image-region: rect(0px, 180px, 18px, 162px) !important;
+
+#history-panelmenu {
+  -moz-image-region: rect(0px, 210px, 30px, 180px) !important;
 }
+
 #downloads-button .toolbarbutton-icon,
 #downloads-button:not([indicator="true"]) {
-  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
+  -moz-image-region: rect(0px, 180px, 30px, 150px) !important;
 }
-#add-ons-button	{
+
+/*#add-ons-button	{
   -moz-image-region: rect(0px, 216px, 18px, 198px) !important;
 }
 #open-file-button {
@@ -37,60 +44,78 @@
 }
 #save-page-button {
   -moz-image-region: rect(0px, 252px, 18px, 234px) !important;
-}
+}*/
+
 #sync-button {
-  -moz-image-region: rect(0px, 270px, 18px, 252px) !important;
+  -moz-image-region: rect(90px, 30px, 120px, 0px) !important;
 }
+
 #feed-button {
-  -moz-image-region: rect(0px, 288px, 18px, 270px) !important;
+  -moz-image-region: rect(90px, 60px, 120px, 30px) !important;
 }
-#characterencoding-button{
+
+/*#characterencoding-button{
   -moz-image-region: rect(0px, 324px, 18px, 306px) !important;
-}
+}*/
+
 #e10s-button,
 #new-window-button {
-  -moz-image-region: rect(0px, 342px, 18px, 324px) !important;
+  -moz-image-region: rect(0px, 330px, 30px, 300px) !important;
 }
+
 #new-tab-button {
-  -moz-image-region: rect(0px, 360px, 18px, 342px) !important;
+  -moz-image-region: rect(0px, 300px, 30px, 270px) !important;
 }
-#privatebrowsing-button {
+
+/*#privatebrowsing-button {
   -moz-image-region: rect(0px, 378px, 18px, 360px) !important;
 }
+
 #find-button {
   -moz-image-region: rect(0px, 396px, 18px, 378px) !important;
-}
+}*/
+
 #print-button {
-  -moz-image-region: rect(0px, 414px, 18px, 396px) !important;
+  -moz-image-region: rect(0px, 270px, 30px, 240px) !important;
 }
+
 #fullscreen-button {
-  -moz-image-region: rect(0px, 432px, 18px, 414px) !important;
+  -moz-image-region: rect(0px, 450px, 30px, 420px) !important;
 }
-#developer-button {
+
+/*#developer-button {
   -moz-image-region: rect(0px, 450px, 18px, 432px) !important;
 }
+
 #preferences-button {
   -moz-image-region: rect(0px, 468px, 18px, 450px) !important;
 }
+
 #PanelUI-menu-button {
   -moz-image-region: rect(1px, 485px, 17px, 469px) !important;
-}
+}*/
+
 #cut-button {
-  -moz-image-region: rect(0px, 504px, 18px, 486px) !important;
+  -moz-image-region: rect(0px, 360px, 30px, 330px) !important;
 }
+
 #copy-button {
-  -moz-image-region: rect(0px, 522px, 18px, 504px) !important;
+  -moz-image-region: rect(0px, 390px, 30px, 360px) !important;
 }
+
 #paste-button {
-  -moz-image-region: rect(0px, 540px, 18px, 522px) !important;
+  -moz-image-region: rect(0px, 420px, 30px, 390px) !important;
 }
+
 #zoom-out-button {
-  -moz-image-region: rect(0px, 558px, 18px, 540px) !important;
+  -moz-image-region: rect(90px, 120px, 120px, 90px) !important;
 }
+
 #zoom-in-button {
-  -moz-image-region: rect(0px, 576px, 18px, 558px) !important;
+  -moz-image-region: rect(90px, 90px, 120px, 60px) !important;
 }
-#tabview-button {
+
+/*#tabview-button {
   -moz-image-region: rect(0px, 648px, 18px, 630px) !important;
 }
 #email-link-button {
@@ -122,4 +147,4 @@
 }
 #alltabs-button {
   -moz-image-region: rect(0px, 648px, 18px, 630px) !important;
-}
+}*/
