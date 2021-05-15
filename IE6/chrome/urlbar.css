@@ -43,6 +43,10 @@
 	margin-left: -2px;
 }
 
+#navigator-toolbox {
+	background-color: #b3bfca !important;
+}
+
 #page-action-buttons {
 	margin-right: 17px !important;
 }
