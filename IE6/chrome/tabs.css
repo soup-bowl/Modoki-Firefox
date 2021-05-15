@@ -17,9 +17,7 @@
    padding-left: 2px !important;
    padding-bottom: 0 !important;
    border: 2 2 0 2 !important;
-   border-image: url("image/button.png") !important;
-   border-image-width: 2px 2px 0px 2px !important;
-   border-image-slice: 2 2 0 2 !important;
+   background-color: #626d70 !important;
    margin-right: -1px;
    margin-left: 0 !important;
    max-height: 25px !important;
@@ -29,41 +27,21 @@
    padding: 0px !important;
    padding-left: 5px !important;
    padding-right: 5px !important;
-   border: unset !important
-   color: #fff !important;
-   background-image: linear-gradient(#ffc5c8, #d4d0c8) !important; }
-
-.tab-content:hover {
-   background-image: linear-gradient(#fac67e, #d4d0c8) !important;
+   border: unset !important;
+   color: #a6bcb7 !important;
+   background-color: #76868b !important;
 }
 
 .tab-content[selected="true"] {
-   /*color: #fff !important;*/
-   background-image: linear-gradient(#99bae2, #d4d0c8) !important;
-   /*background-image: linear-gradient(#99bae2, #2c458b) !important;*/
-}
-
-.tab-content[selected="true"]:hover {
-   /*color: #fff !important;*/
-   background-image: linear-gradient(#9fccdf, #d4d0c8) !important;
+   color: #000 !important;
+   background-color: #b3bfca !important;
 }
 
 #tabs-newtab-button {
-   margin-bottom: 0 !important;
-   margin-top: 0 !important;
-   margin-left: 0 !important;
-   margin-right: 2px !important;
-   padding: 0px !important;
-   border: 2 2 0 2 !important;
-   border-image: url("image/button.png") !important;
-   border-image-width: 2px 2px 0px 2px !important;
-   border-image-slice: 2 2 0 2 !important;
-   border-bottom: none !important;
+   background-image: url('image/newtab.png') !important;
+   background-position: center !important;
+   background-repeat: no-repeat !important;
    max-height: 26px !important;
-}
-
-#tabs-newtab-button:hover {
-   background-image: linear-gradient(#9fccdf, #d4d0c8) !important;
 }
 
 spacer[part=overflow-start-indicator], 
@@ -75,15 +53,3 @@ spacer[part=overflow-end-indicator] {
    margin-left: -5px !important;
    margin-right: 3px !important;
 }
-
-/*
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
-  visibility: visible !important;
-  display: block !important;
-}
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned])[faviconized="true"] .tab-close-button {
-  visibility: collapse !important;
-  display: none !important;
-}
-
-*/
