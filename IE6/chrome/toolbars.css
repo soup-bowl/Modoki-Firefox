@@ -41,15 +41,6 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	visibility: collapse !important;
 }
 
-#browser {
-	border: solid !important;
-	padding: 0px !important;
-	margin-top: -1px !important;
-	border-width: 2px 2px 2px 2px !important;
-	border-image: url("image/combobox.png") !important;
-	border-image-slice: 2 2 2 2 !important; 
-}
-
 #navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar) {
 	-moz-box-ordinal-group:10;
 }

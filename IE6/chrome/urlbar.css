@@ -55,19 +55,6 @@
 	margin-right: 17px !important;
 }
 
-#urlbar-go-button  {
-	margin: 3px !important;
-	margin-right: -16px !important;
-	padding: 0px !important;
-	border: solid !important;
-	min-width: 25px !important;
-	background-color: #d4d0c8 !important;
-	border-radius: 0 !important;
-	border-width: 2px 2px 2px 2px !important;
-	border-image: url("image/comboboxbutton.png") !important;
-	color: #000 !important;
-	border-image-slice: 2 2 2 2 !important; }
-
 #urlbar,
 #urlbar[breakout][breakout-extend][breakout-extend-animate] {
 	margin-top: -3px !important;

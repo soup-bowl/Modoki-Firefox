@@ -147,16 +147,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 	margin-right: 2px !important;
 } 
 
-/*#nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
-	border-image: url("image/toolbar_button.png") !important;
-	border-image-slice: 1 1 1 1 !important;
-}
-
-#nav-bar .toolbarbutton-1:not([disabled="true"]):active {
-	border-image: url("image/toolbar_button_pressed.png") !important;
-	border-image-slice: 1 1 1 1 !important;
-}*/
-
 /*#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 > .toolbarbutton-text {
 	display: -moz-box !important;
 	margin-top: -5px !important;
@@ -183,9 +173,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 #PersonalToolbar toolbarbutton {
 	margin-top: -2px !important;
 	margin-bottom: -2px !important;
-	/*padding: 6px !important;
-	padding-top: 2px !important;
-	padding-bottom: 2px !important;*/
 	border-radius: 0 !important;
 	border: 1px solid transparent !important;
 	margin: 0px !important;
@@ -198,22 +185,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 #PersonalToolbar toolbarbutton > .toolbarbutton-icon {
 	margin-right:2px !important;
 	border: none !important;
-}
-
-/*#PersonalToolbar toolbarbutton > .toolbarbutton-text {
-	margin:0px !important;
-}*/
-
-#main-window #PersonalToolbar toolbarbutton:hover {
-	border-radius: 0 !important;
-	border-image: url("image/toolbar_button.png") !important;
-	border-image-slice: 1 1 1 1 !important;
-}
-
-#PersonalToolbar toolbarbutton:active {
-	border-radius: 0 !important;
-	border-image: url("image/toolbar_handle.png") !important;
-	border-image-slice: 1 1 1 1 !important; 
 }
 
 .toolbarbutton-animatable-box {
