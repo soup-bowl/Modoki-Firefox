@@ -6,6 +6,11 @@ This project aims to bring the Modern Modoki (or close in appearance) theme back
 
 If you're using Pale Moon browser, there's a fork of the original extension which is the best way to use Modern Modoki.
 
+## Plans
+Nowadays Firefox button icons are vectors, and generally of a single colour. This allows the current approach to theming to work. My plan is to make a vector background of the familiar circular and square Modoki icons. This would then mean we can keep the original Firefox icons, but have them appear native.
+
+Feel free to suggest further Netscape or Modoki like adjustments in the Issues segment, or fork your own and run with it.
+
 ## Bugs
 * This theme expects the menu to be visible. It should work regardless, but might look strange.
 * Removing the titlebar might cause unpredictable side-effects.
