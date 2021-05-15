@@ -5,18 +5,14 @@
 	animation-name: none !important;
 	border: none !important;
 	animation: none !important;
-	border-radius: 0 !important;
-	background-image: url("image/comboboxbutton.png") !important;
+	background-image: url("image/dropdown.svg#dropdown") !important;
 	background-repeat: no-repeat !important;
 	padding: 0px !important; 
 	background-position: right center !important; 
 	box-shadow: none !important;
 	background-color: @base_color !important;
-	border: solid !important;
+	border: solid 1px #5d616e !important;
 	border-radius: 0 !important;
-	border-width: 2px 2px 2px 2px !important;
-	border-image: url("image/combobox.png") !important;
-	border-image-slice: 2 2 2 2 !important; 
 	min-height: 25px !important;
 	height: 25px !important;
 }
@@ -34,19 +30,17 @@
 	padding: 0px !important; 
 	box-shadow: none !important;
 	background-color: @base_color !important;
-	border: solid !important;
+	border: solid 1px #5d616e !important;
 	border-radius: 0 !important;
-	border-width: 2px 2px 2px 2px !important;
-	border-image: url("image/combobox.png") !important;
-	border-image-slice: 2 2 2 2 !important; 
 	min-height: 25px !important;
 	height: 25px !important;
 }
 
-#urlbar[open] > #urlbar-background {
-	background-image: url("image/comboboxbutton_pressed.png") !important;
-	background-repeat: no-repeat !important;
-	background-position: right center !important;
+.searchbar-search-button {
+	background: linear-gradient(180deg, rgb(221, 227, 235) 0%, rgb(177, 189, 201) 100%);
+	border-right: 1px solid #5d616e;
+	margin-right: 5px;
+	margin-left: -2px;
 }
 
 #page-action-buttons {
@@ -106,11 +100,4 @@
 /* identity box */
 #identity-box {
 	padding-inline-start: 4px !important;
-}
-
-.searchbar-search-button {
-	background: linear-gradient(180deg, rgb(221, 227, 235) 0%, rgb(177, 189, 201) 100%);
-	border-right: 1px solid black;
-	margin-right: 5px;
-	margin-left: -2px;
 }
