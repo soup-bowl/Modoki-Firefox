@@ -6,7 +6,7 @@
 
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab,
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"] {
-	border: 1px solid #505050 !important;
+	/*border: 1px solid #505050 !important;*/
 	border-bottom: none !important;
 	padding: 0 !important;
 	margin-top: 2px !important;
@@ -52,6 +52,6 @@ spacer[part=overflow-end-indicator] {
 
 .tab-icon-image {
 	margin-top: -1px !important;
-	margin-left: -5px !important;
+	margin-left: -2px !important;
 	margin-right: 3px !important;
 }
