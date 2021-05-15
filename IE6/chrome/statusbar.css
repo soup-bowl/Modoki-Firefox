@@ -2,15 +2,15 @@
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 :root {
-  --statusbar_background_color: grey;
-  --statusbar_font_color: black;
+	--statusbar_background_color: grey;
+	--statusbar_font_color: black;
 }
 
 :-moz-any(statuspanel,#statuspanel) {
-  -moz-appearance: none !important;
-  background-color: unset !important;
-  width: unset !important;
-  border: 0 !important;
+	-moz-appearance: none !important;
+	background-color: unset !important;
+	width: unset !important;
+	border: 0 !important;
 }
 
 #browser-bottombox {

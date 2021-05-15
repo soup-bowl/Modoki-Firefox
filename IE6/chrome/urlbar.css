@@ -22,7 +22,7 @@
 }
 
 #search-container {
-   margin-top: -4px !important;
+	margin-top: -4px !important;
 }
 
 #searchbar {
@@ -50,7 +50,8 @@
 }
 
 #page-action-buttons {
-   margin-right: 17px !important; }
+	margin-right: 17px !important;
+}
 
 #urlbar-go-button  {
 	margin: 3px !important;
@@ -104,7 +105,7 @@
 
 /* identity box */
 #identity-box {
-  padding-inline-start: 4px !important;
+	padding-inline-start: 4px !important;
 }
 
 .searchbar-search-button {
