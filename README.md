@@ -1,6 +1,6 @@
 # Modern Modoki
 Bringing back the Modern Modoki theme into the post-theme era.
-![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118352989-51dd2c00-b55c-11eb-8a58-193c30d645bd.png)
+![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118357993-aa202800-b574-11eb-9121-31876932e509.png)
 
 
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
