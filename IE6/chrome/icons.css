@@ -62,11 +62,11 @@
 #toolbar-menubar .toolbarbutton-1:not([disabled=true]):-moz-any([open],[checked],:hover:active,:active),
 #TabsToolbar .toolbarbutton-1 .toolbarbutton-badge-stack,
 #TabsToolbar .toolbarbutton-1 .toolbarbutton-1 {
-  background: unset !important;
-  background-color: unset !important;
-  border-color: unset !important;
-  box-shadow: unset !important;
-  transition: unset !important;
+	background: unset !important;
+	background-color: unset !important;
+	border-color: unset !important;
+	box-shadow: unset !important;
+	transition: unset !important;
 }
 
 toolbar:not(#TabsToolbar) .toolbarbutton-1 .toolbarbutton-badge-stack,
@@ -76,20 +76,20 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton,
 toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
 toolbar:not(#TabsToolbar) .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
 toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-moz-any(.toolbarbutton-icon, .toolbarbutton-text){
-  background: unset !important;
-  box-shadow: unset !important;
+	background: unset !important;
+	box-shadow: unset !important;
 }
 
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
-  -moz-box-orient: horizontal !important;
+	-moz-box-orient: horizontal !important;
 }
 
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
-  -moz-box-orient: vertical !important;
+	-moz-box-orient: vertical !important;
 }
 
 /*
@@ -113,184 +113,184 @@ Removed pending icon creation:
 	#library-button,#bookmarks-toolbar-placeholder,/*#nav-bar-overflow-button,*/#alltabs-button ),
 #downloads-button:not([indicator="true"]),#panic-button:not([open]),#pocket-button:not([open]),
 #downloads-button .toolbarbutton-icon {
-  list-style-image: url("image/mm-toolbar.png") !important;
+	list-style-image: url("image/mm-toolbar.png") !important;
 }
 
 :-moz-any(#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-        #privatebrowsing-button,/*#find-button,*/#print-button,#fullscreen-button,#developer-button,
+				#privatebrowsing-button,/*#find-button,*/#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	/*#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,*/#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,/*#nav-bar-overflow-button,*/#alltabs-button ) .toolbarbutton-icon {
-  padding: 0px !important;
+	padding: 0px !important;
 }
 
 #back-button .toolbarbutton-icon {
-  padding: 3px !important;
+	padding: 3px !important;
 }
 
 toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
 toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
 toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
-  opacity: 0.6 !important;
+	opacity: 0.6 !important;
 }
 
 #nav-bar .toolbarbutton-1 {
-  min-height: 20px !important;
-  margin-bottom: 2px !important;
-  padding-left: 2px !important;
-  border: 1px solid transparent !important;
-  margin-right: 2px !important;
-  padding: 1px !important;
+	min-height: 20px !important;
+	margin-bottom: 2px !important;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	/*border: 1px solid transparent !important;*/
+	margin-right: 2px !important;
 } 
 
-#nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
-  border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important;
+/*#nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
+	border-image: url("image/toolbar_button.png") !important;
+	border-image-slice: 1 1 1 1 !important;
 }
 
 #nav-bar .toolbarbutton-1:not([disabled="true"]):active {
-  border-image: url("image/toolbar_button_pressed.png") !important;
-  border-image-slice: 1 1 1 1 !important;
-}
+	border-image: url("image/toolbar_button_pressed.png") !important;
+	border-image-slice: 1 1 1 1 !important;
+}*/
 
 /*#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 > .toolbarbutton-text {
-  display: -moz-box !important;
-  margin-top: -5px !important;
+	display: -moz-box !important;
+	margin-top: -5px !important;
 }*/
 
 #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
-  border: none !important;
-  border-radius: 0px !important;
-  margin: 0px !important;
+	border: none !important;
+	border-radius: 0px !important;
+	margin: 0px !important;
 }
 
 #PanelUI-button, #PanelUI-overflow-button {
-  margin: 0px !important;
-  border: none !important;
-  padding: 0px !important;
-  max-width: 20px !important;
+	margin: 0px !important;
+	border: none !important;
+	padding: 0px !important;
+	max-width: 20px !important;
 }
 
 /*#PanelUI-menu-button > .toolbarbutton-text, #PanelUI-overflow-menu-button > .toolbarbutton-text {
-  visibility: collapse !important;
+	visibility: collapse !important;
 }*/
 
 #PersonalToolbar toolbarbutton {
-  margin-top: -2px !important;
-  margin-bottom: -2px !important;
-  /*padding: 6px !important;
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;*/
-  border-radius: 0 !important;
-  border: 1px solid transparent !important;
-  margin: 0px !important;
-  min-height: 22px !important; 
-  max-height: 22px !important;
-  border: 1px solid transparent !important;
-  background-color: transparent !important;
+	margin-top: -2px !important;
+	margin-bottom: -2px !important;
+	/*padding: 6px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;*/
+	border-radius: 0 !important;
+	border: 1px solid transparent !important;
+	margin: 0px !important;
+	min-height: 22px !important; 
+	max-height: 22px !important;
+	border: 1px solid transparent !important;
+	background-color: transparent !important;
 }
 
 #PersonalToolbar toolbarbutton > .toolbarbutton-icon {
-  margin-right:2px !important;
-  border: none !important;
+	margin-right:2px !important;
+	border: none !important;
 }
 
 /*#PersonalToolbar toolbarbutton > .toolbarbutton-text {
-  margin:0px !important;
+	margin:0px !important;
 }*/
 
 #main-window #PersonalToolbar toolbarbutton:hover {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important;
+	border-radius: 0 !important;
+	border-image: url("image/toolbar_button.png") !important;
+	border-image-slice: 1 1 1 1 !important;
 }
 
 #PersonalToolbar toolbarbutton:active {
-  border-radius: 0 !important;
-  border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 1 1 1 1 !important; 
+	border-radius: 0 !important;
+	border-image: url("image/toolbar_handle.png") !important;
+	border-image-slice: 1 1 1 1 !important; 
 }
 
 .toolbarbutton-animatable-box {
-  display: none !important;
+	display: none !important;
 }
 
 #TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) {
-  background: unset !important;
-  border-radius: 0 !important;
-  margin: 0px !important;
+	background: unset !important;
+	border-radius: 0 !important;
+	margin: 0px !important;
 }
 
 #TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-1,
 #TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-badge-stack {
-  background: unset !important;
-  border-radius: 0 !important;
-  border: none !important;
-  margin: 0px !important;
-  max-height: 22px !important;
-  max-width: 22px !important;
+	background: unset !important;
+	border-radius: 0 !important;
+	border: none !important;
+	margin: 0px !important;
+	max-height: 22px !important;
+	max-width: 22px !important;
 }
 
 .tab-close-button {
-  margin-top: -1px !important;
-  margin-right: -7px !important;
-  padding: 1px !important;
-  max-height: 20px !important;
-  max-width: 20px !important;
+	margin-top: -1px !important;
+	margin-right: -7px !important;
+	padding: 1px !important;
+	max-height: 20px !important;
+	max-width: 20px !important;
 }
 
 #tabs-newtab-button {
-  list-style-image: url("image/newtabff11.png") !important;
+	list-style-image: url("image/newtabff11.png") !important;
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
-  height: 24px !important;
-  width: 24px !important;
-  padding: 3px !important;
+	height: 24px !important;
+	width: 24px !important;
+	padding: 3px !important;
 }
 
 #downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
 #downloads-button:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
 #downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background: -moz-image-rect(url("image/toolbar_fx3_strata.png"), 0, 198, 18, 180) center no-repeat !important;
+	background: -moz-image-rect(url("image/toolbar_fx3_strata.png"), 0, 198, 18, 180) center no-repeat !important;
 }
 
 /*#main-window[uidensity="compact"] #back-button {
-  padding: 0px !important;
-  margin-right: -4px !important;
+	padding: 0px !important;
+	margin-right: -4px !important;
 }
 
 #main-window[uidensity="compact"] #back-button .toolbarbutton-icon {
-  padding: 5px !important;
+	padding: 5px !important;
 }*/
 
 /*#main-window[uidensity="compact"] #back-button > .toolbarbutton-text,
 #main-window[uidensity="compact"] #library-button > .toolbarbutton-text,
 #main-window[uidensity="compact"] #history-panelmenu > .toolbarbutton-text {
-  display: -moz-box !important;
-  margin-left: -5px !important;
+	display: -moz-box !important;
+	margin-left: -5px !important;
 }*/
 
 /*#main-window:not([uidensity="compact"]) #back-button .toolbarbutton-icon {
-  display: -moz-box !important;
-  margin-bottom: -3px !important;
-  margin-top: -3px !important;
-  border-radius: 0px !important;
+	display: -moz-box !important;
+	margin-bottom: -3px !important;
+	margin-top: -3px !important;
+	border-radius: 0px !important;
 }*/
 
 #PlacesChevron {
-    max-height: 10px !important;
-    padding: 0px !important; 
+		max-height: 10px !important;
+		padding: 0px !important; 
 }
 
 toolbar:not(#TabsToolbar) #stop-button .toolbarbutton-animatable-image,
 toolbar:not(#TabsToolbar) #reload-button .toolbarbutton-animatable-image {
-  visibility: collapse !important;
+	visibility: collapse !important;
 }
 
 toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
 toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
-  fill: unset !important;
+	fill: unset !important;
 }
 
