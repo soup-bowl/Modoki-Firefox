@@ -1,6 +1,17 @@
 @import "hacks/tabs_on_bottom.css";
 @import "hacks/tabs_on_bottom_menubar_on_top_patch.css";
 
+/* Hacks overrides*/
+#navigator-toolbox {
+    padding-top: calc(23px + var(--uc-titlebar-padding,0px)) !important;
+}
+
+#toolbar-menubar {
+    height: 23px !important;
+}
+/* ! Hacks overrides*/
+
+
 #nav-bar:not(:-moz-lwtheme) {
 	margin-top: 1px !important;
 	padding: 1px !important;
