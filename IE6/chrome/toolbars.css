@@ -1,3 +1,6 @@
+@import "hacks/tabs_on_bottom.css";
+@import "hacks/tabs_on_bottom_menubar_on_top_patch.css";
+
 #nav-bar:not(:-moz-lwtheme) {
 	margin-top: 1px !important;
 	padding: 1px !important;
