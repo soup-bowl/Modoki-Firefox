@@ -166,27 +166,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 	max-width: 20px !important;
 }
 
-/*#PanelUI-menu-button > .toolbarbutton-text, #PanelUI-overflow-menu-button > .toolbarbutton-text {
-	visibility: collapse !important;
-}*/
-
-#PersonalToolbar toolbarbutton {
-	margin-top: -2px !important;
-	margin-bottom: -2px !important;
-	border-radius: 0 !important;
-	border: 1px solid transparent !important;
-	margin: 0px !important;
-	min-height: 22px !important; 
-	max-height: 22px !important;
-	border: 1px solid transparent !important;
-	background-color: transparent !important;
-}
-
-#PersonalToolbar toolbarbutton > .toolbarbutton-icon {
-	margin-right:2px !important;
-	border: none !important;
-}
-
 .toolbarbutton-animatable-box {
 	display: none !important;
 }

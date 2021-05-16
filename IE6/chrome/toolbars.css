@@ -29,7 +29,6 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
 	border: none !important;
-	height: 100% !important;
 	background-image: linear-gradient(to right, #000060,#A1C4E9) !important;
 } 
 
@@ -41,18 +40,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	visibility: collapse !important;
 }
 
-#navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar) {
-	-moz-box-ordinal-group:10;
-}
 
 #TabsToolbar {
-	-moz-box-ordinal-group:1000!important;
-}
-
-#TabsToolbar {
-	display: block !important;
-	position: fixed !important;
-	width: 100vw !important;
 	-moz-appearance: none !important;
 	background: linear-gradient(180deg, rgba(98,109,112,1) 0%, rgba(142,157,161,1) 25%);
 	padding: 0px !important;
@@ -61,17 +50,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	max-height: 27px !important;
 }
 
-#TabsToolbar {
-	top: var(--uc-titlebar-padding, 97px);
-}
-
-/* No menubar/bookmarks - var(--uc-titlebar-padding,74px) */
-/* No bars - var(--uc-titlebar-padding,50px) */
 
 #tabbrowser-tabs {
 	width: 100vw !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-	padding-bottom: var(--tab-min-height) !important;
 }
