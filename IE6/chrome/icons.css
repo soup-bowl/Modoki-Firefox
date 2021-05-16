@@ -124,11 +124,7 @@ Removed pending icon creation:
 	padding: 0px !important;
 }
 
-#main-window:not([uidensity="compact"]) #back-button .toolbarbutton-icon {
-	padding: 3px !important;
-}
-
-#main-window[uidensity="compact"] #back-button .toolbarbutton-icon {
+#main-window #back-button .toolbarbutton-icon {
 	padding: 0px !important;
 }
 

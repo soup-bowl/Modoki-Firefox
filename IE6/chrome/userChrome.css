@@ -6,13 +6,13 @@
 @import "urlbar.css"; 
 
 #main-window {
-   background-color: #dde3eb !important;
-   color: #000 !important;
+	background-color: #dde3eb !important;
+	color: #000 !important;
 }
 
 @media (-moz-proton) {
-   :root {
-     --tab-min-height: 28px !important;
-     --proton-tab-block-margin: 0px !important;
-   }
+	:root {
+		--tab-min-height: 28px !important;
+		--proton-tab-block-margin: 0px !important;
+	}
 }
