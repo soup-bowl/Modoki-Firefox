@@ -20,6 +20,9 @@ Feel free to suggest further Netscape or Modoki like adjustments in the Issues s
 * Using Firefox 'themes' will cause the theme to go very strange.
 
 ## Installation
+(This has been untested on Mac so far. I'm also unable to reasonably test this on Windows 10, tested on 8.1 instead).
+
+* (Windows & Linux) In Customize, turn on Title Bar and enable Menu bar under toolbars.
 * Download a zip copy of the theme (preferably from releases).
 * In Firefox, navigate to `about:support`.
 * Under 'Profile Directory', click on Open Directory.
