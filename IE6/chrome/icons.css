@@ -86,11 +86,11 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 	-moz-box-orient: horizontal !important;
 }
 
-#main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+/*#main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
 	-moz-box-orient: vertical !important;
-}
+}*/
 
 /*
 Removed pending icon creation:
