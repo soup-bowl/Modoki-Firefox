@@ -15,4 +15,9 @@
 		--tab-min-height: 28px !important;
 		--proton-tab-block-margin: 0px !important;
 	}
+
+	#urlbar-input-container {
+		height: 26px;
+		padding-top: 4px;
+	}
 }
