@@ -106,7 +106,7 @@ Removed pending icon creation:
 */
 
 :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-	#sync-button,#feed-button,#e10s-button,
+	#sync-button,#feed-button,#e10s-button,#PanelUI-menu-button,
 	#new-window-button,#new-tab-button,#print-button,#fullscreen-button,
 	#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	/*#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,*/#containers-panelmenu,
@@ -160,6 +160,14 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 	border: none !important;
 	padding: 0px !important;
 	max-width: 20px !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+	padding: 0 !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon {
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
 }
 
 .toolbarbutton-animatable-box {

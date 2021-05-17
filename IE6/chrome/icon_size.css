@@ -246,6 +246,18 @@
 	-moz-image-region: rect(150px, 90px, 180px, 60px) !important;
 }
 
+#PanelUI-menu-button {
+	-moz-image-region: rect(90px, 180px, 120px, 150px) !important;
+}
+
+#PanelUI-menu-button:hover {
+	-moz-image-region: rect(120px, 180px, 150px, 150px) !important;
+}
+
+#PanelUI-menu-button:active {
+	-moz-image-region: rect(151px, 180px, 181px, 150px) !important;
+}
+
 /*#tabview-button {
 	-moz-image-region: rect(0px, 648px, 18px, 630px) !important;
 }
