@@ -110,7 +110,7 @@ Removed pending icon creation:
 	#new-window-button,#new-tab-button,#print-button,#fullscreen-button,
 	#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	/*#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,*/#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ),
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button/*,#alltabs-button*/ ),
 #downloads-button:not([indicator="true"]),#panic-button:not([open]),
 #downloads-button .toolbarbutton-icon {
 	list-style-image: url("image/mm-toolbar.png") !important;
@@ -120,7 +120,7 @@ Removed pending icon creation:
 				#privatebrowsing-button,/*#find-button,*/#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
 	/*#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,*/#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) .toolbarbutton-icon {
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button/*,#alltabs-button*/ ) .toolbarbutton-icon {
 	padding: 0px !important;
 }
 
