@@ -6,6 +6,26 @@
 @import "urlbar.css"; 
 
 #main-window {
-   background-color: #dde3eb !important;
-   color: #000 !important;
+	background-color: #dde3eb !important;
+	color: #000 !important;
+}
+
+@media (-moz-proton) {
+	:root {
+		--tab-min-height: 28px !important;
+		--proton-tab-block-margin: 0px !important;
+	}
+
+	#urlbar-input-container {
+		height: 26px !important;
+		padding-top: 4px !important;
+	}
+
+	.tab-close-button {
+		height: auto !important;
+	}
+
+	.tabbrowser-tab {
+		min-height: inherit !important;
+	}
 }
