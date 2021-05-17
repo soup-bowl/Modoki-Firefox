@@ -52,3 +52,15 @@ html[inFullscreen="true"] #browser-bottombox {
 html[inFullscreen="true"] #statuspanel {
 	
 }
+
+.browserContainer > findbar {
+	background-color: rgba(221,227,235,1) !important;
+	border-top: 1px solid black !important;
+}
+
+.findbar-closebutton {
+	background: linear-gradient(180deg, rgba(173,200,227,1) 0%, rgba(173,200,227,1) 50%, rgba(86,127,168,1) 50%, rgba(105,144,183,1) 100%) !important;
+	fill: #fff !important;
+	border-radius: 3px !important;
+	border: solid 1px #405a6d !important;
+}
