@@ -58,6 +58,10 @@
 	-moz-image-region: rect(60px, 120px, 90px, 90px) !important;
 }
 
+/*#downloads-button {
+	-moz-image-region: rect(0px, 180px, 30px, 150px) !important;
+}*/
+
 #bookmarks-toolbar-placeholder,
 #bookmarks-menu-button,
 #library-button {
