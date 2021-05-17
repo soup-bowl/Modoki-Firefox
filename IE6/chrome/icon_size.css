@@ -258,6 +258,18 @@
 	-moz-image-region: rect(151px, 180px, 181px, 150px) !important;
 }
 
+#nav-bar-overflow-button {
+	-moz-image-region: rect(90px, 210px, 120px, 180px) !important;
+}
+
+#nav-bar-overflow-button:hover {
+	-moz-image-region: rect(120px, 210px, 150px, 180px) !important;
+}
+
+#nav-bar-overflow-button:active {
+	-moz-image-region: rect(151px, 210px, 181px, 180px) !important;
+}
+
 /*#tabview-button {
 	-moz-image-region: rect(0px, 648px, 18px, 630px) !important;
 }
