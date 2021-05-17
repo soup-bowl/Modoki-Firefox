@@ -28,4 +28,9 @@
 	.tabbrowser-tab {
 		min-height: inherit !important;
 	}
+
+	.urlbar-page-action,
+	.urlbar-page-action image {
+		padding: 0 !important;
+	}
 }
