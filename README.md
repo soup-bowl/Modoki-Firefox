@@ -1,8 +1,6 @@
 # Modern Modoki
 Bringing back the Modern Modoki theme into the post-theme era. **This theme supports Proton**.
-![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118357993-aa202800-b574-11eb-9121-31876932e509.png)
-
-
+![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118549747-ccbc6780-b753-11eb-96e2-a6d297f3da1c.png)
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
 If you're using Pale Moon browser, there's a fork of the original extension which is the best way to use Modern Modoki.
