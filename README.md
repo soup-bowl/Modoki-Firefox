@@ -1,5 +1,5 @@
 # Modern Modoki
-Bringing back the Modern Modoki theme into the post-theme era. **This theme currently does not work with Proton. Can be disabled by the `browser.proton.enabled` setting**.
+Bringing back the Modern Modoki theme into the post-theme era. **This theme supports Proton**.
 ![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118357993-aa202800-b574-11eb-9121-31876932e509.png)
 
 
