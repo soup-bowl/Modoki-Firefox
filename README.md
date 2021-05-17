@@ -11,11 +11,10 @@ Nowadays Firefox button icons are vectors, and generally of a single colour. Thi
 Feel free to suggest further Netscape or Modoki like adjustments in the Issues segment, or fork your own and run with it.
 
 ## Bugs
-* This theme expects the menu to be visible. It should work regardless, but might look strange.
-* Removing the titlebar might cause unpredictable side-effects.
-* A lot of functionality was made since Netscape and Modoki. I've added icons where relevant, but original icons will show through until I create a new icon pack.
+* This theme expects the menu to be visible. The bookmarks bar is optional.
+* This theme is **not compatible** with lightweight themes, or combined title bar.
 * This theme will look incredibly blurry on screen densities above 1080p.
-* Using Firefox 'themes' will cause the theme to go very strange.
+* Like the original Modern Modoki, not all icons are covered - especially not extensions.
 
 ## Installation
 Note: These theme is currently **not supported on macOS**. 
