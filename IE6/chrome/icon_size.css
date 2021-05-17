@@ -234,6 +234,30 @@
 	-moz-image-region: rect(151px, 360px, 181px, 330px) !important;
 }
 
+#find-button {
+	-moz-image-region: rect(90px, 390px, 120px, 360px) !important;
+}
+
+#find-button:hover {
+	-moz-image-region: rect(120px, 390px, 150px, 360px) !important;
+}
+
+#find-button:active {
+	-moz-image-region: rect(151px, 390px, 181px, 360px) !important;
+}
+
+#characterencoding-button {
+	-moz-image-region: rect(90px, 420px, 120px, 390px) !important;
+}
+
+#characterencoding-button:hover {
+	-moz-image-region: rect(120px, 420px, 150px, 390px) !important;
+}
+
+#characterencoding-button:active {
+	-moz-image-region: rect(151px, 420px, 181px, 390px) !important;
+}
+
 /*#PanelUI-menu-button {
 	-moz-image-region: rect(1px, 485px, 17px, 469px) !important;
 }*/
