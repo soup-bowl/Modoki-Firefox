@@ -17,7 +17,15 @@
 	}
 
 	#urlbar-input-container {
-		height: 26px;
-		padding-top: 4px;
+		height: 26px !important;
+		padding-top: 4px !important;
+	}
+
+	.tab-close-button {
+		height: auto !important;
+	}
+
+	.tabbrowser-tab {
+		min-height: inherit !important;
 	}
 }
