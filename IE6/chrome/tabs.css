@@ -38,19 +38,22 @@
 	background-color: #b3bfca !important;
 }
 
-.tab-close-button.close-icon {
+.tab-close-button.close-icon,
+.tab-icon-sound {
 	width: 16px !important;
 	border-radius: 3px !important;
 	border: solid 1px #405a6d !important;
 }
 
-.tabbrowser-tab:not([visuallyselected="true"]) .tab-close-button.close-icon {
+.tabbrowser-tab:not([visuallyselected="true"]) .tab-close-button.close-icon,
+.tabbrowser-tab:not([visuallyselected="true"]) .tab-icon-sound {
 	background: linear-gradient(180deg, rgba(172,180,182,1) 0%, rgba(172,180,182,1) 50%, rgba(153,161,163,1) 50%, rgba(153,161,163,1) 100%) !important;
 	/*fill: #bbc3c5;*/
 	fill: #5b5b5b !important;
 }
 
-.tabbrowser-tab[visuallyselected="true"] .tab-close-button.close-icon {
+.tabbrowser-tab[visuallyselected="true"] .tab-close-button.close-icon,
+.tabbrowser-tab[visuallyselected="true"] .tab-icon-sound {
 	background: linear-gradient(180deg, rgba(173,200,227,1) 0%, rgba(173,200,227,1) 50%, rgba(86,127,168,1) 50%, rgba(105,144,183,1) 100%) !important;
 	fill: #fff !important;
 }
@@ -75,4 +78,8 @@ spacer[part=overflow-end-indicator] {
 	margin-top: -1px !important;
 	margin-left: -2px !important;
 	margin-right: 3px !important;
+}
+
+.tab-icon-sound {
+	margin-right: 2px !important;
 }

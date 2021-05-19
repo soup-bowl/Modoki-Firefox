@@ -184,7 +184,8 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 	max-width: 22px !important;
 }
 
-.tab-close-button {
+.tab-close-button,
+.tab-icon-sound {
 	margin-top: -1px !important;
 	margin-right: 0px !important;
 	padding: 1px !important;
