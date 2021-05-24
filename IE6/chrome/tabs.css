@@ -1,11 +1,11 @@
 /* remove default tab colors */
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab, .tab-content {
+#TabsToolbar .tabbrowser-tab[visuallyselected="true"],
+#TabsToolbar .tabbrowser-tab, .tabbrowser-tab, .tab-content {
 	border: unset !important;
 }
 
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab,
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"] {
+#TabsToolbar .tabbrowser-tab, .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab[visuallyselected="true"] {
 	/*border: 1px solid #505050 !important;*/
 	border-bottom: none !important;
 	padding: 0 !important;

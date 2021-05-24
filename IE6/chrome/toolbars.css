@@ -12,7 +12,7 @@
 /* ! Hacks overrides*/
 
 
-#nav-bar:not(:-moz-lwtheme) {
+#nav-bar {
 	margin-top: 1px !important;
 	padding: 1px !important;
 	background: linear-gradient(0deg, rgba(177,189,201,1) 0%, rgba(221,227,235,1) 100%) !important;
@@ -21,7 +21,7 @@
 	border-bottom: 1px solid #86929e !important;
 }
 
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	-moz-appearance: none !important;
 	margin-bottom: -4px !important;
 	background: linear-gradient(0deg, rgba(221,227,235,1) 0%, rgba(177,189,201,1) 100%) !important;
@@ -30,7 +30,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 	border-bottom: 1px solid #86929e !important;
 }
 
-#main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+#main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	margin-bottom: 0px !important;
 }
 

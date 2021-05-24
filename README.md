@@ -11,8 +11,9 @@ Nowadays Firefox button icons are vectors, and generally of a single colour. Thi
 Feel free to suggest further Netscape or Modoki like adjustments in the Issues segment, or fork your own and run with it.
 
 ## Bugs
-* This theme expects the menu to be visible. The bookmarks bar is optional.
 * This theme is **not compatible** with lightweight themes, or combined title bar.
+* This theme does not support dark mode (on a PC set to dark mode, change the theme to light in Firefox Customise setting).
+* This theme expects the menu to be visible. The bookmarks bar is optional.
 * This theme will look incredibly blurry on screen densities above 1080p.
 * Like the original Modern Modoki, not all icons are covered - especially not extensions.
 
