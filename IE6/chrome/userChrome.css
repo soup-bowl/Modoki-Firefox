@@ -10,6 +10,11 @@
 	color: #000 !important;
 }
 
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+	height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+}
+
 @media (-moz-proton) {
 	:root {
 		--tab-min-height: 28px !important;
