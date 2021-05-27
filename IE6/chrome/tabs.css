@@ -24,6 +24,10 @@
 	max-height: 25px !important;
 }
 
+#TabsToolbar .tabbrowser-tab[pinned="true"] {
+	min-width: inherit !important;
+}
+
 .tab-content {
 	padding: 0px !important;
 	padding-left: 5px !important;
