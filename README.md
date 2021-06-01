@@ -5,6 +5,8 @@ This project aims to bring the Modern Modoki (or close in appearance) theme back
 
 If you're using Pale Moon browser, there's a fork of the original extension which is the best way to use Modern Modoki.
 
+If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
+
 ## Plans
 Nowadays Firefox button icons are vectors, and generally of a single colour. This allows the current approach to theming to work. My plan is to make a vector background of the familiar circular and square Modoki icons. This would then mean we can keep the original Firefox icons, but have them appear native.
 
@@ -16,6 +18,8 @@ Feel free to suggest further Netscape or Modoki like adjustments in the Issues s
 * This theme expects the menu to be visible. The bookmarks bar is optional.
 * This theme will look incredibly blurry on screen densities above 1080p.
 * Like the original Modern Modoki, not all icons are covered - especially not extensions.
+
+**If you experience graphical oddities in Proton (Firefox 89+) please submit a bug report with screenshots + OS version.**
 
 ## Installation
 Note: These theme is currently **not supported on macOS**. 
