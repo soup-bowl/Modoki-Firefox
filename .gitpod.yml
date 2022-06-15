@@ -3,6 +3,8 @@ tasks:
   - init: |
       sudo apt-get update
       sudo apt-get install -y firefox
+  - command: |
+      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ~/.mozilla/firefox/*.default-release/chrome
 ports:
   - port: 5900
     onOpen: ignore
