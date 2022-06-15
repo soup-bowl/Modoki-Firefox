@@ -4,8 +4,9 @@ tasks:
       sudo apt-get update
       sudo apt-get install -y firefox
   - command: |
-      MM_FFDIR=(~/.mozilla/firefox/*.default-release)
-      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
+      cd ~/.mozilla/firefox/*.default-release
+      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome chrome
+      cd $GITPOD_REPO_ROOTS
 ports:
   - port: 5900
     onOpen: ignore
