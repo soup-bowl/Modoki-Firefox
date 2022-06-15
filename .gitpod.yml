@@ -1,0 +1,10 @@
+image: gitpod/workspace-full-vnc
+tasks:
+  - init: |
+      sudo apt-get update
+      sudo apt-get install -y firefox
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-browser
