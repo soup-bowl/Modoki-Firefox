@@ -4,6 +4,7 @@ tasks:
       sudo apt-get update
       sudo apt-get install -y firefox
   - command: |
+      sleep 20s
       timeout 5 firefox
       MM_FFDIR=(~/.mozilla/firefox/*.default-release)
       ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
