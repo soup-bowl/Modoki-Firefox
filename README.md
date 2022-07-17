@@ -38,9 +38,9 @@ Note: These theme is currently **not supported on macOS**.
 If done correctly, you Firefox will now be skinned with Modern Modoki. **Please note this theme will not be included in synchronise**.
 
 ## Credits
-CSS based on the great [Internet Explorer 6 theme][rf] from Redmond Firefox.
+CSS based on the great [Internet Explorer 6 theme][rf] by matthewmx86.
 Inspired by [Modern Modoki theme][rf], itself inspired by Netscape Navigator ([still available for Pale Moon][mmm]!).
 
-[rf]:  https://github.com/matthewmx86/Redmond-Firefox
+[rf]:  https://github.com/matthewmx86/RetroThemesFirefox
 [mm]:  http://lowandsh.web.fc2.com/index.en.html
 [mmm]: https://addons.palemoon.org/addon/modoki-moon/
