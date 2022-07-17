@@ -7,6 +7,8 @@ If you're using Pale Moon browser, there's a fork of the original extension whic
 
 If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-FirefoxCSS)
+
 ## Plans
 Nowadays Firefox button icons are vectors, and generally of a single colour. This allows the current approach to theming to work. My plan is to make a vector background of the familiar circular and square Modoki icons. This would then mean we can keep the original Firefox icons, but have them appear native.
 
