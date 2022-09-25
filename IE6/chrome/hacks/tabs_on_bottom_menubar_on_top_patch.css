@@ -6,26 +6,48 @@ See the above repository for updates as well as full license text. */
 
 :root:not([sizemode="fullscreen"]){ --uc-window-control-width: 0px !important }
 
-#navigator-toolbox{ padding-top: calc(29px + var(--uc-titlebar-padding,0px)) !important }
-:root[sizemode="fullscreen"] #navigator-toolbox{ padding-top: 0px !important; }
+:root{
+   /* height if native titlebar is enabled, assumes empty menubar */
+  --uc-menubar-height: 20px;
+}
+:root[tabsintitlebar]{
+  /* height when native titlebar is disabled, more roomy so can fit buttons etc. */
+  --uc-menubar-height: 29px;
+}
+
+/* Since menubar is statically at top, remove fake drag-space that might be set by window_control_placeholder_support.css */
+:root:not([sizemode="fullscreen"]) #nav-bar{ border-inline-width: 0 }
+
+#navigator-toolbox{
+  -moz-window-dragging: drag;
+  padding-top: var(--uc-menubar-height) !important;
+}
+/* Remove window dragging from notification boxes */
+#tab-notification-deck,
+.global-notificationbox{
+  -moz-window-dragging: no-drag;
+}
+
 #toolbar-menubar{
   position: fixed;
   display: flex;
-  top: var(--uc-titlebar-padding,0px);
-  height: 29px;
+  top: 0px;
+  height: var(--uc-menubar-height);
   width: 100%;
   overflow: hidden;
 }
 
-#toolbar-menubar > .titlebar-buttonbox-container{ height: 29px; order: 100; }
+#toolbar-menubar > .titlebar-buttonbox-container{ height: 100%; order: 100; }
 
 #toolbar-menubar > [flex]{ flex-grow: 100; }
 #toolbar-menubar > spacer[flex]{
   order: 99;
   flex-grow: 1;
-  min-width: var(--uc-window-drag-space-width,20px);
+  min-width: var(--uc-window-drag-space-post,20px);
 }
 
-#toolbar-menubar .titlebar-button{ padding: 2px 17px !important;  }
-
 #toolbar-menubar .toolbarbutton-1 { --toolbarbutton-inner-padding: 3px }
+
+:root:not([chromehidden~="menubar"], [sizemode="fullscreen"]) #TabsToolbar > .titlebar-buttonbox-container {
+  height: var(--uc-menubar-height);
+}

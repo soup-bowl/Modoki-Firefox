@@ -3,6 +3,8 @@ Bringing back the Modern Modoki theme into the post-theme era. **This theme supp
 ![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/118549747-ccbc6780-b753-11eb-96e2-a6d297f3da1c.png)
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
+The theme is primarily designed with the [Chicago95](https://github.com/grassmunk/Chicago95) Linux theme in mind.
+
 If you're using Pale Moon browser, there's a fork of the original extension which is the best way to use Modern Modoki.
 
 If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
@@ -15,6 +17,7 @@ Nowadays Firefox button icons are vectors, and generally of a single colour. Thi
 Feel free to suggest further Netscape or Modoki like adjustments in the Issues segment, or fork your own and run with it.
 
 ## Bugs
+* This theme is primarily tested on **XFCE** with **[Chicago95](https://github.com/grassmunk/Chicago95)** theme. Other setups may encounter bugs.
 * This theme is **not compatible** with lightweight themes, or combined title bar.
 * This theme does not support dark mode (on a PC set to dark mode, change the theme to light in Firefox Customise setting).
 * This theme expects the menu to be visible. The bookmarks bar is optional.

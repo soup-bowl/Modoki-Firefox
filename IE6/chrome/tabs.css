@@ -28,6 +28,10 @@
 	min-width: inherit !important;
 }
 
+.tab-background, .tab-stack {
+  min-height: auto !important;
+}
+
 .tab-content {
 	padding: 0px !important;
 	padding-left: 5px !important;
@@ -40,6 +44,10 @@
 .tab-content[selected="true"] {
 	color: #000 !important;
 	background-color: #b3bfca !important;
+}
+
+.tab-close-button.close-icon {
+	height: 1.5em !important;
 }
 
 .tab-close-button.close-icon,
