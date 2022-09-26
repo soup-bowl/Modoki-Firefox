@@ -1,9 +1,8 @@
 image: gitpod/workspace-full-vnc
 tasks:
-  - init: |
+  - command: |
       sudo apt-get update
       sudo apt-get install -y firefox
-    command: |
       sleep 20s
       timeout 5 firefox
       MM_FFDIR=(~/.mozilla/firefox/*.default-release)
