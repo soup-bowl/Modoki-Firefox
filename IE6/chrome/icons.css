@@ -99,6 +99,10 @@ Removed pending icon creation:
 #PanelUI-menu-button
 */
 
+#downloads-button[animate][notification] > .toolbarbutton-badge-stack > #downloads-indicator-anchor > #downloads-indicator-icon {
+	visibility: visible !important;
+}
+
 :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
 	#sync-button,#feed-button,#e10s-button,#PanelUI-menu-button, #privatebrowsing-button, #preferences-button,
 	#new-window-button,#new-tab-button,#print-button,#fullscreen-button, #add-ons-button, #find-button,
