@@ -6,9 +6,8 @@ tasks:
       sleep 20s
       timeout 5 firefox
       MM_FFDIR=(~/.mozilla/firefox/*.default-release)
+      cp user.js ${MM_FFDIR}
       ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
-      echo "user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);" >> ${MM_FFDIR}/user.js
-      echo "user_pref(\"browser.compactmode.show\", true);" >> ${MM_FFDIR}/user.js
 ports:
   - port: 5900
     onOpen: ignore
