@@ -6,11 +6,11 @@ Bringing back the Modern Modoki theme into the post-theme era. **This theme supp
 
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
-If you're using Pale Moon browser, Use **[Modoki Moon](https://addons.palemoon.org/addon/modoki-moon/)** instead of this - a full fork of the original.
+If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - a full fork of the original.
 
 If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-FirefoxCSS)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
 
 ## Plans
 
@@ -20,7 +20,7 @@ Feel free to suggest further Netscape or Modoki like adjustments in the Issues s
 
 ## Bugs
 
-* This theme is primarily tested on **XFCE** with **[Chicago95](https://github.com/grassmunk/Chicago95)** theme. Other setups may encounter bugs.
+* This theme is primarily tested on **XFCE** with **[Chicago95][c95]** theme. Other setups may encounter bugs.
 * This theme is **not compatible** with lightweight themes, or combined title bar.
 * This theme does not support dark mode (on a PC set to dark mode, change the theme to light in Firefox Customise setting).
 * This theme expects the menu to be visible. The bookmarks bar is optional.
@@ -50,5 +50,6 @@ CSS based on the great [Internet Explorer 6 theme][rf] by matthewmx86.
 Inspired by [Modern Modoki theme][rf], itself inspired by Netscape Navigator ([still available for Pale Moon][mmm]!).
 
 [rf]:  https://github.com/matthewmx86/RetroThemesFirefox
+[c95]: https://github.com/grassmunk/Chicago95
 [mm]:  http://lowandsh.web.fc2.com/index.en.html
 [mmm]: https://addons.palemoon.org/addon/modoki-moon/
