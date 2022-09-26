@@ -9,6 +9,8 @@ tasks:
       ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
       echo "user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);" >> ${MM_FFDIR}/user.js
       echo "user_pref(\"browser.compactmode.show\", true);" >> ${MM_FFDIR}/user.js
+      echo "user_pref(\"devtools.chrome.enabled\", true);" >> ${MM_FFDIR}/user.js
+      echo "user_pref(\"browser.uidensity\", 1);" >> ${MM_FFDIR}/user.js
 ports:
   - port: 5900
     onOpen: ignore
