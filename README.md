@@ -6,7 +6,7 @@ Bringing back the Modern Modoki theme into the post-theme era. **This theme supp
 
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
-If you're using Pale Moon browser, there's a fork of the original extension which is the best way to use Modern Modoki.
+If you're using Pale Moon browser, Use **[Modoki Moon](https://addons.palemoon.org/addon/modoki-moon/)** instead of this - a full fork of the original.
 
 If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
 
