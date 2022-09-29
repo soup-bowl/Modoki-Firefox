@@ -75,10 +75,20 @@
 }
 
 #tabs-newtab-button {
-	background-image: url('image/newtab.png') !important;
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	max-height: 26px !important;
+	list-style-image: url("image/newtab.png") !important;
+	-moz-image-region: rect(0px, 18px, 16px, 1px);
+	max-height: 26px;
+
+	--toolbarbutton-hover-background: none;
+	--toolbarbutton-active-background: none;
+}
+
+#tabs-newtab-button:hover {
+	-moz-image-region: rect(0px, 40px, 16px, 23px);
+}
+
+#tabs-newtab-button:active {
+	-moz-image-region: rect(0px, 62px, 16px, 45px);
 }
 
 spacer[part=overflow-start-indicator], 
