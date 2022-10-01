@@ -73,3 +73,16 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	background-color: rgba(221,227,235,1) !important;
 	background-image: none !important;
 }
+
+#PersonalToolbar .bookmark-item,
+#PersonalToolbar .toolbarbutton-1 {
+	border: 1px outset transparent;
+	border-radius: unset !important;
+	--toolbarbutton-hover-background: none;
+	--toolbarbutton-active-background: none;
+}
+
+#PersonalToolbar .bookmark-item:hover,
+#PersonalToolbar .toolbarbutton-1:hover {
+	border: 1px outset rgb(221, 227, 235);
+}
