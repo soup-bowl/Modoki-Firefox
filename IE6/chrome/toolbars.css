@@ -86,3 +86,12 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 #PersonalToolbar .toolbarbutton-1:hover {
 	border: 1px outset rgb(221, 227, 235);
 }
+
+#urlbar-input-container box {
+	background-image: linear-gradient(to bottom, rgb(183, 216, 254), rgb(183, 216, 254) 20%, rgb(152, 192, 254) 50%, rgb(121, 168, 253) 80%);
+	border-radius: 0 !important;
+}
+
+#urlbar-input-container box:last-child {
+	border-right: 1px solid black;
+}
