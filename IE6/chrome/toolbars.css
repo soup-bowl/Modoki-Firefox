@@ -61,12 +61,14 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	padding: 0px !important;
 	padding-left: 2px !important;
 	min-height: 27px !important;
-	max-height: 27px !important;
 }
 
 
 #tabbrowser-tabs {
 	width: 100vw !important;
+	/* Suggested by philberthfz to cope with Firefox densities.
+	https://github.com/soup-bowl/Modoki-Firefox/issues/5#issuecomment-1364602687 */
+	max-height: 27px !important; 
 }
 
 :root:not([lwtheme-image]) .browserContainer > findbar:-moz-lwtheme {
