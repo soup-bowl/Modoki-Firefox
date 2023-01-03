@@ -1,6 +1,6 @@
 # Modern Modoki
 
-Bringing back the Modern Modoki theme into the post-theme era. **This theme supports Proton**.
+Bringing back the Modern Modoki theme into the post-theme era. **This theme supports Firefox 89+**.
 
 ![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/192164979-31f7c725-87c4-4513-aaed-d2c52a17a9b6.png)
 
@@ -12,26 +12,22 @@ If you want compact density in Proton, set `browser.uidensity` to `1` ([source](
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
 
-## Plans
+## Bugs & Limitations
 
-Nowadays Firefox button icons are vectors, and generally of a single colour. This allows the current approach to theming to work. My plan is to make a vector background of the familiar circular and square Modoki icons. This would then mean we can keep the original Firefox icons, but have them appear native.
-
-Feel free to suggest further Netscape or Modoki like adjustments in the Issues segment, or fork your own and run with it.
-
-## Bugs
-
-* This theme is primarily tested on **XFCE** with **[Chicago95][c95]** theme. Other setups may encounter bugs.
-* This theme is **not compatible** with lightweight themes, or combined title bar.
-* This theme does not support dark mode (on a PC set to dark mode, change the theme to light in Firefox Customise setting).
-* This theme expects the menu to be visible. The bookmarks bar is optional.
-* This theme will look incredibly blurry on screen densities above 1080p.
+* MacOS is **not supported**. **Linux** and **Windows** is supported.
+  * This theme is primarily tested on **XFCE** with **[Chicago95][c95]** theme. Other setups may encounter bugs.
+* This theme is **not compatible** with Firefox skins/themes, or a combined title bar.
+* Dark mode is not currently supported.
+  * on a PC set to dark mode, change the theme to light in Firefox Customise setting.
+* The menu bar is expected to be visible. The bookmarks bar is optional.
+* Due to the current reliance on low-res button images, this theme will look incredibly blurry on screen densities above 1080p.
 * Like the original Modern Modoki, not all icons are covered - especially not extensions.
 
-**If you experience graphical oddities in Proton (Firefox 89+) please submit a bug report with screenshots + OS version.**
+**If you experience graphical oddities please submit a bug report with screenshots + OS version.**
 
 ## Installation
 
-Note: These theme is currently **not supported on macOS**. 
+Note: These theme is **not supported on MacOS**. 
 
 * (Windows & Linux) In Customize, turn on Title Bar and enable Menu bar under toolbars.
 * Download a zip copy of the theme (preferably from releases).
