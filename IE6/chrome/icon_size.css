@@ -222,15 +222,18 @@
 	-moz-image-region: rect(151px, 330px, 181px, 300px) !important;
 }
 
-#add-ons-button {
+#add-ons-button,
+#unified-extensions-button {
 	-moz-image-region: rect(90px, 360px, 120px, 330px) !important;
 }
 
-#add-ons-button:hover {
+#add-ons-button:hover,
+#unified-extensions-button:hover {
 	-moz-image-region: rect(120px, 360px, 150px, 330px) !important;
 }
 
-#add-ons-button:active {
+#add-ons-button:active,
+#unified-extensions-button:active {
 	-moz-image-region: rect(151px, 360px, 181px, 330px) !important;
 }
 
