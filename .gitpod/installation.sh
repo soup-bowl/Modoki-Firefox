@@ -17,7 +17,7 @@ MM_FFNDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-nightl
 MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
 
 for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFEDIR}"; do
-	cp user.js "${DIR}"
+	cp .gitpod/user.js "${DIR}"
 	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
 done
 
