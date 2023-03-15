@@ -5,15 +5,14 @@ tasks:
       sudo add-apt-repository ppa:mozillateam/ppa -y
       sudo apt-get update
       sudo apt-get install -y firefox firefox-esr
-      sleep 20s
       timeout 5 firefox
       timeout 5 firefox-esr
-      MM_FFDIR=(~/.mozilla/firefox/*.default-release)
-      MM_FFEDIR=(~/.mozilla/firefox-esr/*.default-esr*)
-      cp user.js ${MM_FFDIR}
-      cp user.js ${MM_FFEDIR}
-      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
-      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFEDIR}/chrome
+      MM_FFDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-release')"
+      MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
+      for DIR in "${MM_FFDIR}" "${MM_FFEDIR}"; do
+        cp user.js "${DIR}"
+        ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
+      done
 
 ports:
   - port: 5900
