@@ -1,15 +1,23 @@
 image: gitpod/workspace-full-vnc
+
 tasks:
   - command: |
+      sudo add-apt-repository ppa:mozillateam/ppa -y
       sudo apt-get update
-      sudo apt-get install -y firefox
+      sudo apt-get install -y firefox firefox-esr
       sleep 20s
       timeout 5 firefox
+      timeout 5 firefox-esr
       MM_FFDIR=(~/.mozilla/firefox/*.default-release)
+      MM_FFEDIR=(~/.mozilla/firefox-esr/*.default-esr*)
       cp user.js ${MM_FFDIR}
+      cp user.js ${MM_FFEDIR}
       ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFDIR}/chrome
+      ln -f -s ${GITPOD_REPO_ROOTS}/IE6/chrome ${MM_FFEDIR}/chrome
+
 ports:
   - port: 5900
     onOpen: ignore
   - port: 6080
+    name: VNC Viewer
     onOpen: open-browser
