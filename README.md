@@ -1,8 +1,16 @@
 # Modern Modoki
 
-Bringing back the Modern Modoki theme into the post-theme era. **This theme supports Firefox 89+**.
+<h1 align="center">Modern Modoki</h1>
 
-![Firefox screenshot running Modern Modoki](https://user-images.githubusercontent.com/11209477/192164979-31f7c725-87c4-4513-aaed-d2c52a17a9b6.png)
+<p align="center">
+ <a href="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox">
+  <img src="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox/badge" alt="CodeFactor" />
+ </a>
+</p>
+
+<p align="center">
+ <img alt="Firefox screenshot running Modern Modoki" src="https://user-images.githubusercontent.com/11209477/192164979-31f7c725-87c4-4513-aaed-d2c52a17a9b6.png" />
+</p>
 
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
