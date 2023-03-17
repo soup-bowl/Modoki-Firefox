@@ -1,5 +1,3 @@
-# Modern Modoki
-
 <h1 align="center">Modern Modoki</h1>
 
 <p align="center">
