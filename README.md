@@ -48,7 +48,7 @@ If done correctly, you Firefox will now be skinned with Modern Modoki. **Please 
 
 ## Credits
 
-* Inspired by **[Modern Modoki theme][mm]**, itself inspired by **Netscape Navigator** ([still available for **Pale Moon**][mmm]!).
+* Inspired by **[Modern Modoki theme][mm]**, itself inspired by **Netscape Navigator**.
 * Built upon the base of **[Internet Explorer 6 theme][rf]** by **matthewmx86** (now a theme collection).
 * All functional layouts built upon the amazing foundations of [**Firefox CSS Hacks** by **MrOtherGuy**](https://github.com/MrOtherGuy/firefox-csshacks).
 
