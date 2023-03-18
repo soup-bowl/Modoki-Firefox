@@ -4,6 +4,9 @@
  <a href="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox">
   <img src="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox/badge" alt="CodeFactor" />
  </a>
+ <a href="https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox">
+  <img src="https://img.shields.io/badge/open%20in-Gitpod-orange?logo=gitpod&logoColor=white" />
+ </a>
 </p>
 
 <p align="center">
