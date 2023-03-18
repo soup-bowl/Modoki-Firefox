@@ -3,6 +3,7 @@
 sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get update
 sudo apt-get install -y firefox firefox-esr
+sudo sed -i 's/Name=Firefox Web Browser/Name=Firefox Web Browser (ESR)/' /usr/share/applications/firefox-esr.desktop
 
 sudo wget -O /opt/firefox-nightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest&os=linux64&lang=en-US"
 sudo tar -xjf /opt/firefox-nightly.tar.bz2 -C /opt
