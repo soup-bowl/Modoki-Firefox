@@ -14,6 +14,8 @@ This project aims to bring the Modern Modoki (or close in appearance) theme back
 
 If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - a full fork of the original.
 
+This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
+
 If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
@@ -21,7 +23,7 @@ If you want compact density in Proton, set `browser.uidensity` to `1` ([source](
 ## Bugs & Limitations
 
 * MacOS is **not supported**. **Linux** and **Windows** is supported.
-  * This theme is primarily tested on **XFCE** with **[Chicago95][c95]** theme. Other setups may encounter bugs.
+  * This theme is primarily tested on **XFCE**. Other setups may encounter bugs.
 * This theme is **not compatible** with Firefox skins/themes, or a combined title bar.
 * Dark mode is not currently supported.
   * on a PC set to dark mode, change the theme to light in Firefox Customise setting.
@@ -50,9 +52,10 @@ If done correctly, you Firefox will now be skinned with Modern Modoki. **Please 
 
 * Inspired by **[Modern Modoki theme][mm]**, itself inspired by **Netscape Navigator**.
 * Built upon the base of **[Internet Explorer 6 theme][rf]** by **matthewmx86** (now a theme collection).
-* All functional layouts built upon the amazing foundations of [**Firefox CSS Hacks** by **MrOtherGuy**](https://github.com/MrOtherGuy/firefox-csshacks).
+* All functional layouts built upon the amazing foundations of [**Firefox CSS Hacks**][cssh] by **MrOtherGuy**.
 
-[rf]:  https://github.com/matthewmx86/RetroThemesFirefox
-[c95]: https://github.com/grassmunk/Chicago95
-[mm]:  http://lowandsh.web.fc2.com/index.en.html
-[mmm]: https://addons.palemoon.org/addon/modoki-moon/
+[rf]:   https://github.com/matthewmx86/RetroThemesFirefox
+[c95]:  https://github.com/grassmunk/Chicago95
+[mm]:   http://lowandsh.web.fc2.com/index.en.html
+[mmm]:  https://addons.palemoon.org/addon/modoki-moon/
+[cssh]: https://github.com/MrOtherGuy/firefox-csshacks
