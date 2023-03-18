@@ -2,8 +2,6 @@
 
 #urlbar > #urlbar-background {
 	margin: 0px !important;
-	animation-name: none !important;
-	border: none !important;
 	animation: none !important;
 	background-image: url("image/dropdown.svg#dropdown") !important;
 	background-repeat: no-repeat !important;
@@ -27,10 +25,8 @@
 
 #searchbar {
 	margin: 0px !important;
-	animation-name: none !important;
 	border: none !important;
 	animation: none !important;
-	border-radius: 0 !important;
 	padding: 0px !important; 
 	box-shadow: none !important;
 	background-color: @base_color !important;

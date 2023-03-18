@@ -45,14 +45,6 @@
 	background: transparent !important;
 }
 
-html[inFullscreen="true"] #browser-bottombox {
-	display:none !important;
-}
-
-html[inFullscreen="true"] #statuspanel {
-	
-}
-
 .browserContainer > findbar {
 	background-color: rgba(221,227,235,1) !important;
 	border-top: 1px solid black !important;
