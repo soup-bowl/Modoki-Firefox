@@ -1,8 +1,7 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - init: bash .gitpod/prerun.sh
-  - command: bash .gitpod/installation.sh
+  - command: bash .gitpod/prerun.sh && bash .gitpod/installation.sh
 
 ports:
   - port: 5900
