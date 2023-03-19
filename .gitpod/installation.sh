@@ -22,7 +22,7 @@ timeout 5 firefox-developer
 
 MM_FFDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-release')"
 MM_FFNDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-nightly')"
-MM_FFADIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-aurora*')"
+MM_FFADIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.dev-edition-default')"
 MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
 
 for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
@@ -32,3 +32,4 @@ done
 
 mkdir -p ~/.local/share/applications
 cp .gitpod/firefox-nightly.desktop ~/.local/share/applications/firefox-nightly.desktop
+cp .gitpod/firefox-aurora.desktop ~/.local/share/applications/firefox-aurora.desktop
