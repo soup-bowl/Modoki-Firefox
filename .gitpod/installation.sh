@@ -7,17 +7,25 @@ sudo sed -i 's/Name=Firefox Web Browser/Name=Firefox Web Browser (ESR)/' /usr/sh
 
 sudo wget -O /opt/firefox-nightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest&os=linux64&lang=en-US"
 sudo tar -xjf /opt/firefox-nightly.tar.bz2 -C /opt
-sudo ln -sf /opt/firefox/firefox /usr/local/bin/firefox-nightly
+sudo mv /opt/firefox /opt/firefox-nightly
+sudo ln -sf /opt/firefox/firefox-nightly /usr/local/bin/firefox-nightly
+
+sudo wget -O /opt/firefox-developer.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest&os=linux64&lang=en-US"
+sudo tar -xjf /opt/firefox-developer.tar.bz2 -C /opt
+sudo mv /opt/firefox /opt/firefox-developer
+sudo ln -sf /opt/firefox/firefox-developer /usr/local/bin/firefox-developer
 
 timeout 5 firefox
 timeout 5 firefox-esr
 timeout 5 firefox-nightly
+timeout 5 firefox-developer
 
 MM_FFDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-release')"
 MM_FFNDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-nightly')"
+MM_FFADIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-aurora*')"
 MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
 
-for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFEDIR}"; do
+for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
 	cp .gitpod/user.js "${DIR}"
 	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
 done
