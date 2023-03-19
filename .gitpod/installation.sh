@@ -1,20 +1,5 @@
 #! /bin/bash
 
-sudo add-apt-repository ppa:mozillateam/ppa -y
-sudo apt-get update
-sudo apt-get install -y firefox firefox-esr
-sudo sed -i 's/Name=Firefox Web Browser/Name=Firefox Web Browser (ESR)/' /usr/share/applications/firefox-esr.desktop
-
-sudo wget -O /opt/firefox-nightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest&os=linux64&lang=en-US"
-sudo tar -xjf /opt/firefox-nightly.tar.bz2 -C /opt
-sudo mv /opt/firefox /opt/firefox-nightly
-sudo ln -sf /opt/firefox-nightly/firefox /usr/local/bin/firefox-nightly
-
-sudo wget -O /opt/firefox-developer.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest&os=linux64&lang=en-US"
-sudo tar -xjf /opt/firefox-developer.tar.bz2 -C /opt
-sudo mv /opt/firefox /opt/firefox-developer
-sudo ln -sf /opt/firefox-developer/firefox /usr/local/bin/firefox-developer
-
 timeout 5 firefox
 timeout 5 firefox-esr
 timeout 5 firefox-nightly
@@ -33,3 +18,6 @@ done
 mkdir -p ~/.local/share/applications
 cp .gitpod/firefox-nightly.desktop ~/.local/share/applications/firefox-nightly.desktop
 cp .gitpod/firefox-aurora.desktop ~/.local/share/applications/firefox-aurora.desktop
+
+echo ""
+echo "You can now run all versions of Firefox with the installed theme available, and developer options enabled."
