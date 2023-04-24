@@ -1,95 +1,95 @@
 #back-button {
-	-moz-image-region: rect(0px, 30px, 30px, 0px) !important;
+	list-style-image: url("image/interface/button_idle_back.png") !important;
 }
 
 #back-button:hover {
-	-moz-image-region: rect(30px, 30px, 60px, 0px) !important;
+	list-style-image: url("image/interface/button_hover_back.png") !important;
 }
 
 #back-button:active {
-	-moz-image-region: rect(60px, 30px, 90px, 0px) !important;
+	list-style-image: url("image/interface/button_pressed_back.png") !important;
 }
 
 #forward-button	{
-	-moz-image-region: rect(0px, 60px, 30px, 30px) !important;
+	list-style-image: url("image/interface/button_idle_forward.png") !important;
 }
 
 #forward-button:hover	{
-	-moz-image-region: rect(30px, 60px, 60px, 30px) !important;
+	list-style-image: url("image/interface/button_hover_forward.png") !important;
 }
 
 #forward-button:active	{
-	-moz-image-region: rect(60px, 60px, 90px, 30px) !important;
+	list-style-image: url("image/interface/button_pressed_forward.png") !important;
 }
 
 #home-button {
-	-moz-image-region: rect(0px, 150px, 30px, 120px) !important;
+	list-style-image: url("image/interface/button_idle_home.png") !important;
 }
 
 #home-button:hover {
-	-moz-image-region: rect(30px, 150px, 60px, 120px) !important;
+	list-style-image: url("image/interface/button_hover_home.png") !important;
 }
 
 #home-button:active {
-	-moz-image-region: rect(60px, 150px, 90px, 120px) !important;
+	list-style-image: url("image/interface/button_pressed_home.png") !important;
 }
 
 #stop-button {
-	-moz-image-region: rect(0px, 90px, 30px, 60px) !important;
+	list-style-image: url("image/interface/button_idle_stop.png") !important;
 }
 
 #stop-button:hover {
-	-moz-image-region: rect(30px, 90px, 60px, 60px) !important;
+	list-style-image: url("image/interface/button_hover_stop.png") !important;
 }
 
 #stop-button:active {
-	-moz-image-region: rect(60px, 90px, 90px, 60px) !important;
+	list-style-image: url("image/interface/button_pressed_stop.png") !important;
 }
 
 #reload-button {
-	-moz-image-region: rect(0px, 120px, 30px, 90px) !important;
+	list-style-image: url("image/interface/button_idle_reload.png") !important;
 }
 
 #reload-button:hover {
-	-moz-image-region: rect(30px, 120px, 60px, 90px) !important;
+	list-style-image: url("image/interface/button_hover_reload.png") !important;
 }
 
 #reload-button:active {
-	-moz-image-region: rect(60px, 120px, 90px, 90px) !important;
+	list-style-image: url("image/interface/button_pressed_reload.png") !important;
 }
 
 /*#downloads-button {
-	-moz-image-region: rect(0px, 180px, 30px, 150px) !important;
+	list-style-image: url("image/interface/button_idle_download.png") !important;
 }*/
 
 #bookmarks-toolbar-placeholder,
 #bookmarks-menu-button,
 #library-button {
-	-moz-image-region: rect(0px, 240px, 30px, 210px) !important;
+	list-style-image: url("image/interface/button_idle_bookmarks.png") !important;
 }
 
 #bookmarks-toolbar-placeholder:hover,
 #bookmarks-menu-button:hover,
 #library-button:hover {
-	-moz-image-region: rect(30px, 240px, 60px, 210px) !important;
+	list-style-image: url("image/interface/button_hover_bookmarks.png") !important;
 }
 
 #bookmarks-toolbar-placeholder:active,
 #bookmarks-menu-button:active,
 #library-button:active {
-	-moz-image-region: rect(60px, 240px, 90px, 210px) !important;
+	list-style-image: url("image/interface/button_pressed_bookmarks.png") !important;
 }
 
 #history-panelmenu {
-	-moz-image-region: rect(0px, 210px, 30px, 180px) !important;
+	list-style-image: url("image/interface/button_idle_history.png") !important;
 }
 
 #history-panelmenu:hover {
-	-moz-image-region: rect(30px, 210px, 60px, 180px) !important;
+	list-style-image: url("image/interface/button_hover_history.png") !important;
 }
 
 #history-panelmenu:active {
-	-moz-image-region: rect(60px, 210px, 90px, 180px) !important;
+	list-style-image: url("image/interface/button_pressed_history.png") !important;
 }
 
 #downloads-button .toolbarbutton-icon,
@@ -108,11 +108,11 @@
 }*/
 
 #sync-button {
-	-moz-image-region: rect(90px, 30px, 120px, 0px) !important;
+	list-style-image: url("image/interface/button_idle_sync.png") !important;
 }
 
 #feed-button {
-	-moz-image-region: rect(90px, 60px, 120px, 30px) !important;
+	list-style-image: url("image/interface/button_idle_rss.png") !important;
 }
 
 /*#characterencoding-button{
@@ -121,41 +121,41 @@
 
 #e10s-button,
 #new-window-button {
-	-moz-image-region: rect(0px, 330px, 30px, 300px) !important;
+	list-style-image: url("image/interface/button_idle_newwin.png") !important;
 }
 
 #e10s-button:hover,
 #new-window-button:hover {
-	-moz-image-region: rect(30px, 330px, 60px, 300px) !important;
+	list-style-image: url("image/interface/button_hover_newwin.png") !important;
 }
 
 #e10s-button:active,
 #new-window-button:active {
-	-moz-image-region: rect(60px, 330px, 90px, 300px) !important;
+	list-style-image: url("image/interface/button_pressed_newwin.png") !important;
 }
 
 #new-tab-button {
-	-moz-image-region: rect(0px, 300px, 30px, 270px) !important;
+	list-style-image: url("image/interface/button_idle_newtab.png") !important;
 }
 
 #new-tab-button:hover {
-	-moz-image-region: rect(30px, 300px, 60px, 270px) !important;
+	list-style-image: url("image/interface/button_hover_newtab.png") !important;
 }
 
 #new-tab-button:active {
-	-moz-image-region: rect(60px, 300px, 90px, 270px) !important;
+	list-style-image: url("image/interface/button_pressed_newtab.png") !important;
 }
 
 #privatebrowsing-button {
-	-moz-image-region: rect(90px, 240px, 120px, 210px) !important;
+	list-style-image: url("image/interface/button_idle_incognito.png") !important;
 }
 
 #privatebrowsing-button:hover {
-	-moz-image-region: rect(120px, 240px, 150px, 210px) !important;
+	list-style-image: url("image/interface/button_hover_incognito.png") !important;
 }
 
 #privatebrowsing-button:active {
-	-moz-image-region: rect(151px, 240px, 181px, 210px) !important;
+	list-style-image: url("image/interface/button_pressed_incognito.png") !important;
 }
 
 /*#find-button {
@@ -163,102 +163,102 @@
 }*/
 
 #print-button {
-	-moz-image-region: rect(0px, 270px, 30px, 240px) !important;
+	list-style-image: url("image/interface/button_idle_print.png") !important;
 }
 
 #print-button:hover {
-	-moz-image-region: rect(30px, 270px, 60px, 240px) !important;
+	list-style-image: url("image/interface/button_hover_print.png") !important;
 }
 
 #print-button:active {
-	-moz-image-region: rect(60px, 270px, 90px, 240px) !important;
+	list-style-image: url("image/interface/button_pressed_print.png") !important;
 }
 
 #fullscreen-button {
-	-moz-image-region: rect(0px, 450px, 30px, 420px) !important;
+	list-style-image: url("image/interface/button_idle_fullscreen.png") !important;
 }
 
 #fullscreen-button:hover {
-	-moz-image-region: rect(30px, 450px, 60px, 420px) !important;
+	list-style-image: url("image/interface/button_hover_fullscreen.png") !important;
 }
 
 #fullscreen-button:active {
-	-moz-image-region: rect(60px, 450px, 90px, 420px) !important;
+	list-style-image: url("image/interface/button_pressed_fullscreen.png") !important;
 }
 
 #developer-button {
-	-moz-image-region: rect(90px, 270px, 120px, 240px) !important;
+	list-style-image: url("image/interface/button_idle_preferences.png") !important;
 }
 
 #developer-button:hover {
-	-moz-image-region: rect(120px, 270px, 150px, 240px) !important;
+	list-style-image: url("image/interface/button_hover_preferences.png") !important;
 }
 
 #developer-button:active {
-	-moz-image-region: rect(151px, 270px, 181px, 240px) !important;
+	list-style-image: url("image/interface/button_pressed_preferences.png") !important;
 }
 
 #preferences-button {
-	-moz-image-region: rect(90px, 300px, 120px, 270px) !important;
+	list-style-image: url("image/interface/button_idle_config.png") !important;
 }
 
 #preferences-button:hover {
-	-moz-image-region: rect(120px, 300px, 150px, 270px) !important;
+	list-style-image: url("image/interface/button_hover_config.png") !important;
 }
 
 #preferences-button:active {
-	-moz-image-region: rect(151px, 300px, 181px, 270px) !important;
+	list-style-image: url("image/interface/button_pressed_config.png") !important;
 }
 
 #sidebar-button {
-	-moz-image-region: rect(90px, 330px, 120px, 300px) !important;
+	list-style-image: url("image/interface/button_idle_sidebar.png") !important;
 }
 
 #sidebar-button:hover {
-	-moz-image-region: rect(120px, 330px, 150px, 300px) !important;
+	list-style-image: url("image/interface/button_hover_sidebar.png") !important;
 }
 
 #sidebar-button:active {
-	-moz-image-region: rect(151px, 330px, 181px, 300px) !important;
+	list-style-image: url("image/interface/button_pressed_sidebar.png") !important;
 }
 
 #add-ons-button,
 #unified-extensions-button {
-	-moz-image-region: rect(90px, 360px, 120px, 330px) !important;
+	list-style-image: url("image/interface/button_idle_extensions.png") !important;
 }
 
 #add-ons-button:hover,
 #unified-extensions-button:hover {
-	-moz-image-region: rect(120px, 360px, 150px, 330px) !important;
+	list-style-image: url("image/interface/button_hover_extensions.png") !important;
 }
 
 #add-ons-button:active,
 #unified-extensions-button:active {
-	-moz-image-region: rect(151px, 360px, 181px, 330px) !important;
+	list-style-image: url("image/interface/button_pressed_extensions.png") !important;
 }
 
 #find-button {
-	-moz-image-region: rect(90px, 390px, 120px, 360px) !important;
+	list-style-image: url("image/interface/button_idle_search.png") !important;
 }
 
 #find-button:hover {
-	-moz-image-region: rect(120px, 390px, 150px, 360px) !important;
+	list-style-image: url("image/interface/button_hover_search.png") !important;
 }
 
 #find-button:active {
-	-moz-image-region: rect(151px, 390px, 181px, 360px) !important;
+	list-style-image: url("image/interface/button_pressed_search.png") !important;
 }
 
 #characterencoding-button {
-	-moz-image-region: rect(90px, 420px, 120px, 390px) !important;
+	list-style-image: url("image/interface/button_idle_encoding.png") !important;
 }
 
 #characterencoding-button:hover {
-	-moz-image-region: rect(120px, 420px, 150px, 390px) !important;
+	list-style-image: url("image/interface/button_hover_encoding.png") !important;
 }
 
 #characterencoding-button:active {
-	-moz-image-region: rect(151px, 420px, 181px, 390px) !important;
+	list-style-image: url("image/interface/button_pressed_encoding.png") !important;
 }
 
 /*#PanelUI-menu-button {
@@ -266,87 +266,87 @@
 }*/
 
 #cut-button {
-	-moz-image-region: rect(0px, 360px, 30px, 330px) !important;
+	list-style-image: url("image/interface/button_idle_cut.png") !important;
 }
 
 #cut-button:hover {
-	-moz-image-region: rect(30px, 360px, 60px, 330px) !important;
+	list-style-image: url("image/interface/button_hover_cut.png") !important;
 }
 
 #cut-button:active {
-	-moz-image-region: rect(60px, 360px, 90px, 330px) !important;
+	list-style-image: url("image/interface/button_pressed_cut.png") !important;
 }
 
 #copy-button {
-	-moz-image-region: rect(0px, 390px, 30px, 360px) !important;
+	list-style-image: url("image/interface/button_idle_copy.png") !important;
 }
 
 #copy-button:hover {
-	-moz-image-region: rect(30px, 390px, 60px, 360px) !important;
+	list-style-image: url("image/interface/button_hover_copy.png") !important;
 }
 
 #copy-button:active {
-	-moz-image-region: rect(60px, 390px, 90px, 360px) !important;
+	list-style-image: url("image/interface/button_pressed_copy.png") !important;
 }
 
 #paste-button {
-	-moz-image-region: rect(0px, 420px, 30px, 390px) !important;
+	list-style-image: url("image/interface/button_idle_paste.png") !important;
 }
 
 #paste-button:hover {
-	-moz-image-region: rect(30px, 420px, 60px, 390px) !important;
+	list-style-image: url("image/interface/button_hover_paste.png") !important;
 }
 
 #paste-button:active {
-	-moz-image-region: rect(60px, 420px, 90px, 390px) !important;
+	list-style-image: url("image/interface/button_pressed_paste.png") !important;
 }
 
 #zoom-out-button {
-	-moz-image-region: rect(90px, 120px, 120px, 90px) !important;
+	list-style-image: url("image/interface/button_idle_minus.png") !important;
 }
 
 #zoom-out-button:hover {
-	-moz-image-region: rect(120px, 120px, 150px, 90px) !important;
+	list-style-image: url("image/interface/button_hover_minus.png") !important;
 }
 
 #zoom-out-button:active {
-	-moz-image-region: rect(150px, 120px, 180px, 90px) !important;
+	list-style-image: url("image/interface/button_pressed_minus.png") !important;
 }
 
 #zoom-in-button {
-	-moz-image-region: rect(90px, 90px, 120px, 60px) !important;
+	list-style-image: url("image/interface/button_idle_plus.png") !important;
 }
 
 #zoom-in-button:hover {
-	-moz-image-region: rect(120px, 90px, 150px, 60px) !important;
+	list-style-image: url("image/interface/button_hover_plus.png") !important;
 }
 
 #zoom-in-button:active {
-	-moz-image-region: rect(150px, 90px, 180px, 60px) !important;
+	list-style-image: url("image/interface/button_pressed_plus.png") !important;
 }
 
 #PanelUI-menu-button {
-	-moz-image-region: rect(90px, 180px, 120px, 150px) !important;
+	list-style-image: url("image/interface/button_idle_menu.png") !important;
 }
 
 #PanelUI-menu-button:hover {
-	-moz-image-region: rect(120px, 180px, 150px, 150px) !important;
+	list-style-image: url("image/interface/button_hover_menu.png") !important;
 }
 
 #PanelUI-menu-button:active {
-	-moz-image-region: rect(151px, 180px, 181px, 150px) !important;
+	list-style-image: url("image/interface/button_pressed_menu.png") !important;
 }
 
 #nav-bar-overflow-button {
-	-moz-image-region: rect(90px, 210px, 120px, 180px) !important;
+	list-style-image: url("image/interface/button_idle_more.png") !important;
 }
 
 #nav-bar-overflow-button:hover {
-	-moz-image-region: rect(120px, 210px, 150px, 180px) !important;
+	list-style-image: url("image/interface/button_hover_more.png") !important;
 }
 
 #nav-bar-overflow-button:active {
-	-moz-image-region: rect(151px, 210px, 181px, 180px) !important;
+	list-style-image: url("image/interface/button_pressed_more.png") !important;
 }
 
 /*#tabview-button {
