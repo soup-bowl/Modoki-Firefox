@@ -1,0 +1,46 @@
+name: Update Shims from MrOtherGuy CSS Hacks
+
+on:
+  schedule:
+   - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download the CSS files
+      run: |
+        mkdir -p tmp_css
+        curl -L -o tmp_css/tabs_on_bottom.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom.css
+        curl -L -o tmp_css/tabs_on_bottom_menubar_on_top_patch.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom_menubar_on_top_patch.css
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        mkdir -p IE6/chrome/hacks
+        changes=false
+        for file in tmp_css/*; do
+          if ! cmp --silent "$file" "IE6/chrome/hacks/$(basename "$file")"; then
+            cp "$file" "IE6/chrome/hacks/"
+            changes=true
+          fi
+        done
+        rm -r tmp_css
+        echo "changes_detected=$changes" >> $GITHUB_ENV
+
+    - name: Create Pull Request
+      if: ${{ env.changes_detected == 'true' }}
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'Update CSS files from MrOtherGuy/firefox-csshacks'
+        title: 'Shim updates from MrOtherGuy/firefox-csshacks'
+        body: 'This PR updates the CSS files from the [MrOtherGuy/firefox-csshacks repository](https://github.com/MrOtherGuy/firefox-csshacks).'
+        branch: 'fch-updates'
+        author: 'GitHub Actions <actions@github.com>'
+        committer: 'GitHub Actions <actions@github.com>'

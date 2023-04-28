@@ -1,5 +1,14 @@
 #! /bin/bash
 
+sudo apt-get remove firefox
+
+# Prioritise Deb Firefox over Snap.
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+
 sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get update
 sudo apt-get install -y firefox firefox-esr

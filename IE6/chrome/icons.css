@@ -103,17 +103,6 @@ Removed pending icon creation:
 	visibility: visible !important;
 }
 
-:-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-	#sync-button,#feed-button,#e10s-button,#PanelUI-menu-button, #privatebrowsing-button, #preferences-button,
-	#new-window-button,#new-tab-button,#print-button,#fullscreen-button, #add-ons-button, #unified-extensions-button, #find-button,
-	#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,#characterencoding-button,
-	/*#tabview-button,#email-link-button,#web-apps-button,#webide-button,*/#sidebar-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button/*,#alltabs-button*/ ),
-#downloads-button:not([indicator="true"]),/*#panic-button:not([open]),*/
-#downloads-button .toolbarbutton-icon {
-	list-style-image: url("image/mm-toolbar.png") !important;
-}
-
 :-moz-any(#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
 	#characterencoding-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
 	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,#add-ons-button, #unified-extensions-button,
