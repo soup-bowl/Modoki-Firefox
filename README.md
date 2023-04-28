@@ -1,7 +1,5 @@
 <h1 align="center">Modern Modoki</h1>
 
-:warning: **A change in Firefox 112 and above has [broken the button images](https://github.com/soup-bowl/Modoki-Firefox/issues/15). Until fixed, this theme will appear with broken buttons. ESR still works as expected.**
-
 <p align="center">
  <a href="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox">
   <img src="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox/badge" alt="CodeFactor" />
