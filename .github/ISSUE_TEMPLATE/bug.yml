@@ -1,0 +1,40 @@
+name: Report an Issue
+description: Something looks wrong in the theme? Report it here.
+labels: ["bug"]
+assignees: soup-bowl
+body:
+  - type: dropdown
+    id: ThemeVersion
+    attributes:
+      label: What version of the theme are you using?
+      description: If the option doesn't match your current setup, consider upgrading.
+      options:
+        - Latest Version (0.6)
+        - Latest Main Branch
+    validations:
+      required: true
+  - type: dropdown
+    id: FirefoxVersion
+    attributes:
+      label: What edition of Firefox are you on?
+      description: You can find out in Application Menu / Menu Bar > Help > About Firefox.
+      options:
+        - Mainline Firefox
+        - Firefox Extended Support Release
+        - Firefox Developer Edition
+        - Firefox Nightly
+        - Other / Not Listed
+    validations:
+      required: true
+  - type: input
+    id: FirefoxVersionCustom
+    attributes:
+      label: If Other, please specify
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Please describe the problem you are experiencing. Screenshots very welcome.
+    validations:
+      required: true
