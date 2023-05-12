@@ -41,7 +41,9 @@ for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
 	ln -sf "${CODESPACE_VSCODE_FOLDER}/IE6/chrome" "${DIR}/chrome"
 done
 
-sed -i '/\[end\]/i [exec] (Firefox) {/usr/bin/firefox}' ~/.fluxbox/menu
-sed -i '/\[end\]/i [exec] (Firefox ESR) {/usr/bin/firefox-esr}' ~/.fluxbox/menu
-sed -i '/\[end\]/i [exec] (Firefox Developer) {/usr/local/bin/firefox-developer}' ~/.fluxbox/menu
-sed -i '/\[end\]/i [exec] (Firefox Nightly) {/usr/local/bin/firefox-nightly}' ~/.fluxbox/menu
+if ! grep -q '(Firefox ESR)' ~/.fluxbox/menu; then
+	sed -i '/\[end\]/i [exec] (Firefox) {/usr/bin/firefox}' ~/.fluxbox/menu
+	sed -i '/\[end\]/i [exec] (Firefox ESR) {/usr/bin/firefox-esr}' ~/.fluxbox/menu
+	sed -i '/\[end\]/i [exec] (Firefox Developer) {/usr/local/bin/firefox-developer}' ~/.fluxbox/menu
+	sed -i '/\[end\]/i [exec] (Firefox Nightly) {/usr/local/bin/firefox-nightly}' ~/.fluxbox/menu
+fi
