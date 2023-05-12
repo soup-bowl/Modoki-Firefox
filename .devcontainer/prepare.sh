@@ -1,6 +1,9 @@
 #! /bin/bash
 
-sudo apt-get remove firefox
+sudo apt-get update
+sudo apt-get install -y software-properties-common
+
+sudo apt-get remove -y firefox
 
 # Prioritise Deb Firefox over Snap.
 echo '
@@ -12,7 +15,6 @@ Pin-Priority: 1001
 sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get update
 sudo apt-get install -y firefox firefox-esr
-sudo sed -i 's/Name=Firefox Web Browser/Name=Firefox Web Browser (ESR)/' /usr/share/applications/firefox-esr.desktop
 
 sudo wget -O /opt/firefox-nightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest&os=linux64&lang=en-US"
 sudo tar -xjf /opt/firefox-nightly.tar.bz2 -C /opt
@@ -35,10 +37,11 @@ MM_FFADIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.dev-edition-de
 MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
 
 for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
-	cp .devcontainer/user.js "${DIR}"
-	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
+	cp "${CODESPACE_VSCODE_FOLDER}/.devcontainer/user.js" "${DIR}"
+	ln -sf "${CODESPACE_VSCODE_FOLDER}/IE6/chrome" "${DIR}/chrome"
 done
 
-mkdir -p ~/.local/share/applications
-cp .gitpod/firefox-nightly.desktop ~/.local/share/applications/firefox-nightly.desktop
-cp .gitpod/firefox-aurora.desktop ~/.local/share/applications/firefox-aurora.desktop
+sed -i '/\[end\]/i [exec] (Firefox) {/usr/bin/firefox}' ~/.fluxbox/menu
+sed -i '/\[end\]/i [exec] (Firefox ESR) {/usr/bin/firefox-esr}' ~/.fluxbox/menu
+sed -i '/\[end\]/i [exec] (Firefox Developer) {/usr/local/bin/firefox-developer}' ~/.fluxbox/menu
+sed -i '/\[end\]/i [exec] (Firefox Nightly) {/usr/local/bin/firefox-nightly}' ~/.fluxbox/menu

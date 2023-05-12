@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+	"portsAttributes": {
+		"5901": { "label": "VNC Port" },
+		"6080": { "label": "VNC Viewer" }
+	},
+	"forwardPorts": [5901, 6080],
+	"postCreateCommand": "./.devcontainer/prepare.sh"
+}
