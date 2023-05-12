@@ -38,6 +38,9 @@ MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-es
 
 for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
 	cp "${CODESPACE_VSCODE_FOLDER}/.devcontainer/user.js" "${DIR}"
+	if [ -L "${DIR}/chrome" ]; then
+		rm -r "${DIR}/chrome"
+	fi
 	ln -sf "${CODESPACE_VSCODE_FOLDER}/IE6/chrome" "${DIR}/chrome"
 done
 
