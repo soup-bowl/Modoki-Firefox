@@ -11,5 +11,5 @@
 		"6080": { "label": "VNC Viewer" }
 	},
 	"forwardPorts": [5901, 6080],
-	"postCreateCommand": "./.devcontainer/prepare.sh"
+	"postAttachCommand": "./.devcontainer/prepare.sh"
 }
