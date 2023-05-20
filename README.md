@@ -51,6 +51,16 @@ Note: These theme is **not supported on MacOS**.
 
 If done correctly, you Firefox will now be skinned with Modern Modoki. **Please note this theme will not be included in synchronise**.
 
+## Customisation
+
+### Hide menu button
+
+[Contributed idea by **AlexyBot**](https://github.com/soup-bowl/Modoki-Firefox/issues/8#issuecomment-1544206896), while Firefox supports menu bars, most functionality the menu button adds is duplicated. Therefore, you can hide the menu button. This can be achieved by adding this to the end of the **userChrome.css** file.
+
+```css
+#PanelUI-button { display: none !important; }
+```
+
 ## Credits
 
 * Inspired by **[Modern Modoki theme][mm]**, itself inspired by **Netscape Navigator**.
