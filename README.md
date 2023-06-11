@@ -43,7 +43,7 @@ Note: These theme is **not supported on MacOS**.
 * (Windows & Linux) In Customize, turn on Title Bar and enable Menu bar under toolbars.
 * Download a zip copy of the theme (preferably from releases).
 * In Firefox, navigate to `about:support`.
-* Under 'Profile Directory', click on Open Directory.
+* Under 'Profile Directory' or 'Profile Folder', click on Open Directory/Folder button.
 * In this folder, drop the `chrome` folder from the theme here.
 * In Firefox again, navigate to `about:config`.
 * Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set to true.
