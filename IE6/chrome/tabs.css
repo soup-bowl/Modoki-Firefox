@@ -39,7 +39,7 @@
 	background-color: #76868b !important;
 }
 
-.tab-content[selected="true"] {
+.tab-content[selected] {
 	color: #000 !important;
 	background-color: #b3bfca !important;
 }
