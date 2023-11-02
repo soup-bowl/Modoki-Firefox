@@ -1,11 +1,11 @@
 /* remove default tab colors */
-#TabsToolbar .tabbrowser-tab[visuallyselected="true"],
+#TabsToolbar .tabbrowser-tab[visuallyselected],
 #TabsToolbar .tabbrowser-tab, .tabbrowser-tab, .tab-content {
 	border: unset !important;
 }
 
 #TabsToolbar .tabbrowser-tab, .tabbrowser-tab,
-#TabsToolbar .tabbrowser-tab[visuallyselected="true"] {
+#TabsToolbar .tabbrowser-tab[visuallyselected] {
 	/*border: 1px solid #505050 !important;*/
 	border-bottom: none !important;
 	padding: 0 !important;
@@ -55,15 +55,15 @@
 	border: solid 1px #405a6d !important;
 }
 
-.tabbrowser-tab:not([visuallyselected="true"]) .tab-close-button.close-icon,
-.tabbrowser-tab:not([visuallyselected="true"]) .tab-icon-sound {
+.tabbrowser-tab:not([visuallyselected]) .tab-close-button.close-icon,
+.tabbrowser-tab:not([visuallyselected]) .tab-icon-sound {
 	background: linear-gradient(180deg, rgba(172,180,182,1) 0%, rgba(172,180,182,1) 50%, rgba(153,161,163,1) 50%, rgba(153,161,163,1) 100%) !important;
 	/*fill: #bbc3c5;*/
 	fill: #5b5b5b !important;
 }
 
-.tabbrowser-tab[visuallyselected="true"] .tab-close-button.close-icon,
-.tabbrowser-tab[visuallyselected="true"] .tab-icon-sound {
+.tabbrowser-tab[visuallyselected] .tab-close-button.close-icon,
+.tabbrowser-tab[visuallyselected] .tab-icon-sound {
 	background: linear-gradient(180deg, rgba(173,200,227,1) 0%, rgba(173,200,227,1) 50%, rgba(86,127,168,1) 50%, rgba(105,144,183,1) 100%) !important;
 	fill: #fff !important;
 }
