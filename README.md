@@ -19,11 +19,11 @@ If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - 
 
 This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
-If you want compact density in Proton, set `browser.uidensity` to `1` ([source](https://www.omgubuntu.co.uk/2021/06/firefox-89-released-with-brand-new-look)).
+ ℹ️ If you want compact density, set `browser.compactmode.show` to `true`.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
 
-## Bugs & Limitations
+## 🐞 Bugs & Limitations
 
 * ⚠️ **The menu button clips off the screen ([#8](https://github.com/soup-bowl/Modoki-Firefox/issues/8)).**
 * MacOS is **not supported**. **Linux** and **Windows** is supported.
@@ -37,7 +37,7 @@ If you want compact density in Proton, set `browser.uidensity` to `1` ([source](
 
 **If you experience graphical oddities please submit a bug report with screenshots + OS version.**
 
-## Installation
+## 🚀 Installation
 
 Note: These theme is **not supported on MacOS**. 
 
@@ -52,7 +52,7 @@ Note: These theme is **not supported on MacOS**.
 
 If done correctly, you Firefox will now be skinned with Modern Modoki. **Please note this theme will not be included in synchronise**.
 
-## Customisation
+## 🖌️ Customisation
 
 ### Hide menu button
 
@@ -62,7 +62,7 @@ If done correctly, you Firefox will now be skinned with Modern Modoki. **Please 
 #PanelUI-button { display: none !important; }
 ```
 
-## Credits
+## 🌟 Credits
 
 * Inspired by **[Modern Modoki theme][mm]**, itself inspired by **Netscape Navigator**.
 * Built upon the base of **[Internet Explorer 6 theme][rf]** by **matthewmx86** (now a theme collection).
