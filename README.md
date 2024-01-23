@@ -39,7 +39,7 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
 ## 🚀 Installation
 
-Note: These theme is **not supported on MacOS**. 
+Note: These theme is **not supported on MacOS**. Also, if you are using Firefox on Linux via **Snap** or **Flatpak**, these instructions may not work.
 
 * (Windows & Linux) In Customize, turn on Title Bar and enable Menu bar under toolbars.
 * Download a zip copy of the theme (preferably from releases).
