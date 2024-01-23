@@ -19,6 +19,7 @@
 	padding-top: 2px !important;
 	border-top: 1px solid #eef0f3 !important;
 	border-bottom: 1px solid #86929e !important;
+	padding-right: 14px !important;
 }
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
@@ -63,6 +64,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	min-height: 27px !important;
 }
 
+#TabsToolbar .toolbar-items,
+#TabsToolbar-customization-target {
+	width:100%;
+}
 
 #tabbrowser-tabs {
 	width: 100vw !important;
