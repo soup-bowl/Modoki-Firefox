@@ -2,6 +2,8 @@
 
 sudo apt-get remove -y firefox
 
+mkdir -p ~/.local/share/applications
+
 declare -A firefox_versions=(
 	["firefox-regular"]="firefox-latest"
 	["firefox-esr"]="firefox-esr-latest"
@@ -11,6 +13,10 @@ declare -A firefox_versions=(
 
 for version in "${!firefox_versions[@]}"; do
     product=${firefox_versions[$version]}
+
+	echo ""
+	echo "Installing: ${version}"
+	echo "---------------------------------------"
 
 	echo "> wget -q -O \"/opt/${version}.tar.bz2\" \"https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US\""
     sudo wget -q -O "/opt/${version}.tar.bz2" "https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US"
