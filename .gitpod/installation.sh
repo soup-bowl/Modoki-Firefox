@@ -1,44 +1,55 @@
 #! /bin/bash
 
-sudo apt-get remove firefox
+sudo apt-get remove -y firefox
 
-# Prioritise Deb Firefox over Snap.
-echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+declare -A firefox_versions=(
+	["firefox-regular"]="firefox-latest"
+	["firefox-esr"]="firefox-esr-latest"
+    ["firefox-nightly"]="firefox-nightly-latest"
+    ["firefox-developer"]="firefox-devedition-latest"
+)
 
-sudo add-apt-repository ppa:mozillateam/ppa -y
-sudo apt-get update
-sudo apt-get install -y firefox firefox-esr
-sudo sed -i 's/Name=Firefox Web Browser/Name=Firefox Web Browser (ESR)/' /usr/share/applications/firefox-esr.desktop
+for version in "${!firefox_versions[@]}"; do
+    product=${firefox_versions[$version]}
 
-sudo wget -O /opt/firefox-nightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest&os=linux64&lang=en-US"
-sudo tar -xjf /opt/firefox-nightly.tar.bz2 -C /opt
-sudo mv /opt/firefox /opt/firefox-nightly
-sudo ln -sf /opt/firefox-nightly/firefox /usr/local/bin/firefox-nightly
+	echo "> wget -q -O \"/opt/${version}.tar.bz2\" \"https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US\""
+    sudo wget -q -O "/opt/${version}.tar.bz2" "https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US"
 
-sudo wget -O /opt/firefox-developer.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest&os=linux64&lang=en-US"
-sudo tar -xjf /opt/firefox-developer.tar.bz2 -C /opt
-sudo mv /opt/firefox /opt/firefox-developer
-sudo ln -sf /opt/firefox-developer/firefox /usr/local/bin/firefox-developer
+	echo "> sudo tar -xjf \"/opt/${version}.tar.bz2\" -C /opt"
+    sudo tar -xjf "/opt/${version}.tar.bz2" -C /opt
 
-firefox -CreateProfile default-release
-firefox-esr -CreateProfile default-esr
-firefox-nightly -CreateProfile default-nightly
-firefox-developer -CreateProfile dev-edition-default
+	echo "> sudo mv /opt/firefox \"/opt/${version}\""
+    sudo mv /opt/firefox "/opt/${version}"
 
-MM_FFDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-release')"
-MM_FFNDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-nightly')"
-MM_FFADIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.dev-edition-default')"
-MM_FFEDIR="$(find ~/.mozilla/firefox-esr -maxdepth 1 -type d -name '*.default-esr*')"
+	echo "> ln -sf \"/opt/${version}/firefox\" \"/usr/local/bin/${version}\""
+    sudo ln -sf "/opt/${version}/firefox" "/usr/local/bin/${version}"
 
-for DIR in "${MM_FFDIR}" "${MM_FFNDIR}" "${MM_FFADIR}" "${MM_FFEDIR}"; do
+
+	echo "> /opt/${version}/firefox -CreateProfile $version"
+	/opt/${version}/firefox -CreateProfile $version
+
+	DIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name "*.${version}")"
+
+	echo "> cp .gitpod/user.js \"${DIR}\""
 	cp .gitpod/user.js "${DIR}"
-	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
-done
 
-mkdir -p ~/.local/share/applications
-cp .gitpod/firefox-nightly.desktop ~/.local/share/applications/firefox-nightly.desktop
-cp .gitpod/firefox-aurora.desktop ~/.local/share/applications/firefox-aurora.desktop
+	echo "> ln -sf \"${GITPOD_REPO_ROOTS}/IE6/chrome\" \"${DIR}/chrome\""
+	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
+
+	cat << EOF > ~/Desktop/${version}.desktop
+[Desktop Entry]
+Version=1.0
+Name=${version}
+GenericName=Web Browser
+Exec=/opt/${version}/firefox -P ${version} %u
+Icon=/opt/${version}/browser/chrome/icons/default/default128.png
+Terminal=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Categories=Network;WebBrowser;
+Keywords=web;browser;internet;
+EOF
+
+	cp ~/Desktop/${version}.desktop ~/.local/share/applications/${version}.desktop
+done
