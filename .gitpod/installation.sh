@@ -19,12 +19,12 @@ for version in "${!firefox_versions[@]}"; do
 	existed=0
 
 	echo ""
-	echo "Installing: ${version}"
+	echo "🦊 Installing: ${version}"
 	echo "---------------------------------------"
 
 	if [ -d "/opt/${version}" ]; then
 		existed=1
-		echo "Detected existing install, reinstalling..."
+		echo "ℹ️  Detected existing install, reinstalling..."
 		echo "> sudo rm -r \"/opt/${version}\""
 		sudo rm -r "/opt/${version}"
 	fi
@@ -33,7 +33,7 @@ for version in "${!firefox_versions[@]}"; do
 		echo "> wget -q -O \"/opt/${version}.tar.bz2\" \"https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US\""
 		sudo wget -q -O "/opt/${version}.tar.bz2" "https://download.mozilla.org/?product=${product}&os=linux64&lang=en-US"
 	else
-		echo "${version} has already been downloaded. Skipping..."
+		echo "ℹ️  ${version} has already been downloaded. Skipping..."
 	fi
 
 	echo "> sudo tar -xjf \"/opt/${version}.tar.bz2\" -C /opt"
@@ -78,12 +78,12 @@ EOF
 			sudo chmod +x ~/Desktop/${version}.desktop
 			cp ~/Desktop/${version}.desktop ~/.local/share/applications/${version}.desktop
 		else
-			echo "A problem occurred during profile creation. Skipping ${version}..."
+			echo "❌ A problem occurred during profile creation. Skipping ${version}..."
 		fi
 	else
-		echo "Since ${version} was already installed, let's skip the gubbins."
+		echo "ℹ️  Since ${version} was already installed, let's skip the gubbins."
 	fi
 done
 
 echo ""
-echo "Script has concluded - Firefox (of various variants) installed!"
+echo "🚀 Script has concluded - Firefox (of various variants) installed!"
