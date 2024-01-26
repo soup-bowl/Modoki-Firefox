@@ -24,10 +24,10 @@ sudo tar -xjf /opt/firefox-developer.tar.bz2 -C /opt
 sudo mv /opt/firefox /opt/firefox-developer
 sudo ln -sf /opt/firefox-developer/firefox /usr/local/bin/firefox-developer
 
-timeout 5 firefox
-timeout 5 firefox-esr
-timeout 5 firefox-nightly
-timeout 5 firefox-developer
+firefox -CreateProfile default-release
+firefox-esr -CreateProfile default-esr
+firefox-nightly -CreateProfile default-nightly
+firefox-developer -CreateProfile dev-edition-default
 
 MM_FFDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-release')"
 MM_FFNDIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name '*.default-nightly')"
