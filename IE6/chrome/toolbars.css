@@ -3,28 +3,43 @@
 
 /* Hacks overrides*/
 #navigator-toolbox {
-    padding-top: calc(23px + var(--uc-titlebar-padding,0px)) !important;
+	padding-top: calc(23px + var(--uc-titlebar-padding, 0px)) !important;
 }
 
 #toolbar-menubar {
-    height: 23px !important;
+	height: 23px !important;
 }
+
 /* ! Hacks overrides*/
 
 
 #nav-bar {
 	margin-top: 1px !important;
-	padding: 1px !important;
-	background: linear-gradient(0deg, rgba(177,189,201,1) 0%, rgba(221,227,235,1) 100%) !important;
+	background: linear-gradient(0deg, rgba(177, 189, 201, 1) 0%, rgba(221, 227, 235, 1) 100%) !important;
 	padding-top: 2px !important;
 	border-top: 1px solid #eef0f3 !important;
 	border-bottom: 1px solid #86929e !important;
 }
 
+/* ! Menu padding - remove these lines if you wish to remove the menu button. */
+#main-window[uidensity="compact"] #nav-bar {
+	padding-right: 14px !important;
+}
+
+#main-window[uidensity="normal"] #nav-bar,
+#main-window:not([uidensity]) #nav-bar {
+	padding-right: 18px !important;
+}
+
+#main-window[uidensity="touch"] #nav-bar {
+	padding-right: 20px !important;
+}
+/* ! Menu padding */
+
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	-moz-appearance: none !important;
 	margin-bottom: -4px !important;
-	background: linear-gradient(0deg, rgba(221,227,235,1) 0%, rgba(177,189,201,1) 100%) !important;
+	background: linear-gradient(0deg, rgba(221, 227, 235, 1) 0%, rgba(177, 189, 201, 1) 100%) !important;
 	padding: 1px !important;
 	border-top: 1px solid #eef0f3 !important;
 	border-bottom: 1px solid #86929e !important;
@@ -36,15 +51,15 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 
 #toolbar-menubar {
 	-moz-appearance: none !important;
-	background-color: rgba(221,227,235,1) !important;
+	background-color: rgba(221, 227, 235, 1) !important;
 	padding: 0px !important;
 	padding-left: 2px !important;
 }
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
 	border: none !important;
-	background-image: linear-gradient(to right, #000060,#A1C4E9) !important;
-} 
+	background-image: linear-gradient(to right, #000060, #A1C4E9) !important;
+}
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar .menubar-text {
 	color: #fff !important;
@@ -57,22 +72,26 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 
 #TabsToolbar {
 	-moz-appearance: none !important;
-	background: linear-gradient(180deg, rgba(98,109,112,1) 0%, rgba(142,157,161,1) 25%);
+	background: linear-gradient(180deg, rgba(98, 109, 112, 1) 0%, rgba(142, 157, 161, 1) 25%);
 	padding: 0px !important;
 	padding-left: 2px !important;
 	min-height: 27px !important;
 }
 
+#TabsToolbar .toolbar-items,
+#TabsToolbar-customization-target {
+	width: 100%;
+}
 
 #tabbrowser-tabs {
 	width: 100vw !important;
 	/* Suggested by philberthfz to cope with Firefox densities.
 	https://github.com/soup-bowl/Modoki-Firefox/issues/5#issuecomment-1364602687 */
-	max-height: 27px !important; 
+	max-height: 27px !important;
 }
 
-:root:not([lwtheme-image]) .browserContainer > findbar:-moz-lwtheme {
-	background-color: rgba(221,227,235,1) !important;
+:root:not([lwtheme-image]) .browserContainer>findbar:-moz-lwtheme {
+	background-color: rgba(221, 227, 235, 1) !important;
 	background-image: none !important;
 }
 
