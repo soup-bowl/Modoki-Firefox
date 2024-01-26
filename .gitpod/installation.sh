@@ -63,6 +63,7 @@ EOF
 		cp ~/Desktop/${version}.desktop ~/.local/share/applications/${version}.desktop
 	else
 		echo "A problem occurred during profile creation. Skipping ${version}..."
+	fi
 done
 
 echo ""
