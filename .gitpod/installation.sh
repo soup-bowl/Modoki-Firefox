@@ -33,16 +33,18 @@ for version in "${!firefox_versions[@]}"; do
 
 	echo "> /opt/${version}/firefox -CreateProfile $version"
 	/opt/${version}/firefox -CreateProfile $version
+	exit_status=$?
 
-	DIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name "*.${version}")"
+	if [ $exit_status -eq 0 ]; then
+		DIR="$(find ~/.mozilla/firefox -maxdepth 1 -type d -name "*.${version}")"
 
-	echo "> cp .gitpod/user.js \"${DIR}\""
-	cp .gitpod/user.js "${DIR}"
+		echo "> cp .gitpod/user.js \"${DIR}\""
+		cp .gitpod/user.js "${DIR}"
 
-	echo "> ln -sf \"${GITPOD_REPO_ROOTS}/IE6/chrome\" \"${DIR}/chrome\""
-	ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
+		echo "> ln -sf \"${GITPOD_REPO_ROOTS}/IE6/chrome\" \"${DIR}/chrome\""
+		ln -sf "${GITPOD_REPO_ROOTS}/IE6/chrome" "${DIR}/chrome"
 
-	cat << EOF > ~/Desktop/${version}.desktop
+		cat << EOF > ~/Desktop/${version}.desktop
 [Desktop Entry]
 Version=1.0
 Name=${version}
@@ -57,5 +59,11 @@ Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 EOF
 
-	cp ~/Desktop/${version}.desktop ~/.local/share/applications/${version}.desktop
+		sudo chmod +x ~/Desktop/${version}.desktop
+		cp ~/Desktop/${version}.desktop ~/.local/share/applications/${version}.desktop
+	else
+		echo "A problem occurred during profile creation. Skipping ${version}..."
 done
+
+echo ""
+echo "Script has concluded - Firefox (of various variants) installed!"
