@@ -62,7 +62,7 @@ If done correctly, you Firefox will now be skinned with Modern Modoki. **Please 
 #PanelUI-button { display: none !important; }
 ```
 
-And comment out **lines 24 to 35** of **toolbars.css**.
+And comment out **lines 24 to 37** of **toolbars.css**.
 
 ## 🌟 Credits
 
