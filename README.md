@@ -25,7 +25,6 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
 ## 🐞 Bugs & Limitations
 
-* ⚠️ **The menu button clips off the screen ([#8](https://github.com/soup-bowl/Modoki-Firefox/issues/8)).**
 * MacOS is **not supported**. **Linux** and **Windows** is supported.
   * This theme is primarily tested on **XFCE**. Other setups may encounter bugs.
 * This theme is **not compatible** with Firefox skins/themes, or a combined title bar.
