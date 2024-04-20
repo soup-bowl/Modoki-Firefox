@@ -16,7 +16,7 @@
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
 > [!WARNING]  
-> **Firefox 126** introduces a breaking change to the menu. I haven't located it yet, so **this theme will be functionally broken**. I recommend disabling it until it is located an fixed. The issue is tracked in #29.
+> **Firefox 126** introduces a breaking change to the menu. I haven't located it yet, so **this theme will be functionally broken**. I recommend disabling it until it is located an fixed. The issue is tracked in [#29](https://github.com/soup-bowl/Modoki-Firefox/issues/29).
 
 If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - a full fork of the original.
 
@@ -28,7 +28,7 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
 ## 🐞 Bugs & Limitations
 
-* **Firefox 126^ - The URL bar menu will appear over the search bar, causing significant usibility issues** - tracked in #29.
+* **Firefox 126^ - The URL bar menu will appear over the search bar, causing significant usibility issues** - tracked in [#29](https://github.com/soup-bowl/Modoki-Firefox/issues/29).
 * MacOS is **not supported**. **Linux** and **Windows** is supported.
   * This theme is primarily tested on **XFCE**. Other setups may encounter bugs.
 * This theme is **not compatible** with Firefox skins/themes, or a combined title bar.
