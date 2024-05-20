@@ -1,7 +1,10 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - command: bash .gitpod/installation.sh
+  - command: |
+      sudo wget -O /usr/bin/ff-install https://gist.githubusercontent.com/soup-bowl/de4ff22c17788ce9a8d64a646185ed72/raw/firefox-installation.sh
+      sudo chmod +X /usr/bin/ff-install
+      ff-install "/opt/firefox" "${GITPOD_REPO_ROOTS}/IE6/chrome"
 
 ports:
   - port: 5900
