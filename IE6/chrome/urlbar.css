@@ -61,8 +61,8 @@
 	padding-left: 3px !important; }
 
 #urlbar[breakout-extend] {
-	top:calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-	left:calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
+	top:calc((var(--urlbar-container-height) - var(--urlbar-height)) - 2px / 2) !important;
+	left:calc((var(--urlbar-container-height) - var(--urlbar-width)) / 2) !important;
 	width:100% !important }
 
 #urlbar[breakout-extend] #urlbar-input-container {
@@ -84,7 +84,6 @@
 	width:100%!important;
 	background-color: #ffffff !important;
 	border: 1px solid #000 !important;
-	border-top: none !important;
 }
 
 /* identity box */
