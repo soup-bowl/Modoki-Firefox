@@ -90,7 +90,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar) {
 	max-height: 27px !important;
 }
 
-:root:not([lwtheme-image]) .browserContainer>findbar:-moz-lwtheme {
+:root:not([lwtheme-image]) .browserContainer>findbar[lwtheme="true"] {
 	background-color: rgba(221, 227, 235, 1) !important;
 	background-image: none !important;
 }

@@ -102,3 +102,8 @@ spacer[part=overflow-end-indicator] {
 .tab-icon-sound {
 	margin-right: 2px !important;
 }
+
+/* https://github.com/soup-bowl/Modoki-Firefox/issues/29#issuecomment-2133967288 */
+#TabsToolbar-customization-target {
+	height: 27.4px !important;
+}
