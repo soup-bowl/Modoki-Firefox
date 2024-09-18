@@ -1,7 +1,6 @@
 name: Report an Issue
 description: Something looks wrong in the theme? Report it here.
 labels: ["bug"]
-assignees: soup-bowl
 body:
   - type: dropdown
     id: ThemeVersion
