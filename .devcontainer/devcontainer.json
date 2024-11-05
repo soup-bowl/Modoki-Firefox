@@ -6,9 +6,10 @@
 	"features": {
 		"ghcr.io/devcontainers/features/desktop-lite:1": {
 			"password": "noPassword"
-		}
+		},
+		"ghcr.io/soup-bowl/features/firefox-set:latest": {}
 	},
 	"forwardPorts": [6080],
-	"postCreateCommand": "bash .devcontainer/installation.sh",
+	"postCreateCommand": "ff-installer-link $(pwd)/IE6/chrome",
 	"remoteUser": "root"
 }
