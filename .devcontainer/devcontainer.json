@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Firefoxes",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"password": "noPassword"
+		}
+	},
+	"forwardPorts": [6080],
+	"postCreateCommand": "bash .devcontainer/installation.sh",
+	"remoteUser": "root"
+}
