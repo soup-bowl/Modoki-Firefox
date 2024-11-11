@@ -1,4 +1,4 @@
-@import "hacks/tabs_on_bottom.css";
+@import "hacks/tabs_on_bottom_v2.css"; /* Firefox 133 and below? remove '_v2' */
 @import "hacks/tabs_on_bottom_menubar_on_top_patch.css";
 
 /* Hacks overrides*/

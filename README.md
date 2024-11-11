@@ -19,6 +19,9 @@ If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - 
 
 This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
+> [!IMPORTANT]  
+> In **Firefox 133** and above, there were significant changes to the layout. If you are using a Firefox version lower than this, then install **version 0.9**.
+
  ℹ️ If you want compact density, set `browser.compactmode.show` to `true`.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
