@@ -15,6 +15,9 @@
 
 This project aims to bring the Modern Modoki (or close in appearance) theme back to Firefox using the amazing Redmond Firefox theme base, via Firefox's remaining UserChrome interface.
 
+> [!IMPORTANT]  
+> With Firefox 133 and above, **this theme will not work** as an update breaks the navigation bar. For now I recommend either disabling this theme or switching to a different one until it is resolved.
+
 If you're using Pale Moon browser, Use **[Modoki Moon][mmm]** instead of this - a full fork of the original.
 
 This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
