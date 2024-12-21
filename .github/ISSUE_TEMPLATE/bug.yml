@@ -8,7 +8,7 @@ body:
       label: What version of the theme are you using?
       description: If the option doesn't match your current setup, consider upgrading.
       options:
-        - Latest Version (0.7)
+        - Latest Tagged Version (0.9)
         - Latest Main Branch
     validations:
       required: true
