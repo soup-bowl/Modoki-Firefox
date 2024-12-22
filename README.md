@@ -34,6 +34,7 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 * Dark mode is not currently supported.
   * on a PC set to dark mode, change the theme to light in Firefox Customise setting.
 * The menu bar is expected to be visible. The bookmarks bar is optional.
+* There is some alignment issues with the URL bar, as Firefox keeps making changes to the layout (#32).
 * Due to the current reliance on low-res button images, this theme will look incredibly blurry on screen densities above 1080p.
 * Like the original Modern Modoki, not all icons are covered - especially not extensions.
 
