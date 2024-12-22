@@ -60,10 +60,11 @@
 	margin-top: -5px !important;
 	padding-left: 3px !important; }
 
+/* Breaks Firefox 133^
 #urlbar[breakout-extend] {
 	top:calc((var(--urlbar-container-height) - var(--urlbar-height)) - 2px / 2) !important;
 	left:calc((var(--urlbar-container-height) - var(--urlbar-width)) / 2) !important;
-	width:100% !important }
+	width:100% !important } */
 
 #urlbar[breakout-extend] #urlbar-input-container {
 	height:calc(var(--tab-min-height) - 3px) !important;
