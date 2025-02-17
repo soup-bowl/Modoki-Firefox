@@ -1,15 +1,6 @@
 <h1 align="center">Modern Modoki</h1>
 
 <p align="center">
- <a href="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox">
-  <img src="https://www.codefactor.io/repository/github/soup-bowl/modoki-firefox/badge" alt="CodeFactor" />
- </a>
- <a href="https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox">
-  <img src="https://img.shields.io/badge/open%20in-Gitpod-orange?logo=gitpod&logoColor=white" />
- </a>
-</p>
-
-<p align="center">
  <img alt="Firefox screenshot running Modern Modoki" src="https://user-images.githubusercontent.com/11209477/192164979-31f7c725-87c4-4513-aaed-d2c52a17a9b6.png" />
 </p>
 
@@ -23,8 +14,6 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 > In **Firefox 133** and above, there were significant changes to the layout. If you are using a Firefox version lower than this, then install **version 0.9**.
 
  ℹ️ If you want compact density, set `browser.compactmode.show` to `true`.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/soup-bowl/Modoki-Firefox)
 
 ## 🐞 Bugs & Limitations
 
