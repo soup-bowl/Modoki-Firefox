@@ -16,9 +16,9 @@ jobs:
     - name: Download the CSS files
       run: |
         mkdir -p tmp_css
-        curl -L -o tmp_css/tabs_on_bottom.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom.css
-        curl -L -o tmp_css/tabs_on_bottom_menubar_on_top_patch.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom_menubar_on_top_patch.css
-        curl -L -o tmp_css/tabs_on_bottom_v2.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom_v2.css
+        curl  --fail -L -o tmp_css/tabs_on_bottom.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom.css || exit 1
+        curl  --fail -L -o tmp_css/tabs_on_bottom_menubar_on_top_patch.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom_menubar_on_top_patch.css || exit 1
+        curl  --fail -L -o tmp_css/tabs_on_bottom_v2.css https://raw.githubusercontent.com/MrOtherGuy/firefox-csshacks/master/chrome/tabs_on_bottom_v2.css || exit 1
 
     - name: Check for changes
       id: check_changes
