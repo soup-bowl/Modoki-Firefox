@@ -59,7 +59,7 @@ And comment out **lines 24 to 37** of **toolbars.css**.
 
 ## 💻 Development
 
-This theme comes with a [counterpart Devcontainer](https://containers.dev/) that will setup a small desktop instance that has all four flavours of Firefox installed (Main, ESR, Developer & Nightly), and they're all configured to enable developer tools for inspecting the Firefox UI, using **Tools** > **Browser tools** > **Browser toolbox**. This also works in **GitHub Codespaces** and **GitPod** (untested in Flex).
+This theme comes with a [counterpart Devcontainer](https://containers.dev/) that will setup a small desktop instance that has all four flavours of Firefox installed (Main, ESR, Developer & Nightly), and they're all configured to enable developer tools for inspecting the Firefox UI, using **Tools** > **Browser tools** > **Browser toolbox**. This also works in **GitHub Codespaces**, and generally anything compatible with the Devcontainer spec.
 
 [There is a blog post about the Devcontainer integration](https://soupbowl.io/2025/01/test-firefox-variants/), if you wish to try this on a theme of your own.
 
