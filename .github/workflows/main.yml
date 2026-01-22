@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     - name: Download the CSS files
       run: |
@@ -32,11 +32,11 @@ jobs:
           fi
         done
         rm -r tmp_css
-        echo "changes_detected=$changes" >> $GITHUB_ENV
+        echo "changes_detected=$changes" >> "$GITHUB_OUTPUT"
 
     - name: Create Pull Request
-      if: ${{ env.changes_detected == 'true' }}
-      uses: peter-evans/create-pull-request@v4
+      if: ${{ steps.check_changes.outputs.changes_detected == 'true' }}
+      uses: peter-evans/create-pull-request@v8
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: 'Update CSS files from MrOtherGuy/firefox-csshacks'
