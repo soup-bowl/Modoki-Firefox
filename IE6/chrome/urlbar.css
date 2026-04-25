@@ -16,6 +16,13 @@
 	height: 25px !important;
 }
 
+#urlbar #urlbar-background,
+#urlbar .urlbar-background,
+#searchbar-new .urlbar-background,
+#searchbar {
+	background-color: #fff !important;
+}
+
 #search-container {
 	margin-top: -2px !important;
 }
