@@ -1,7 +1,8 @@
 /* Disable Megabar Animation */
 
 #urlbar > #urlbar-background,
-#urlbar > .urlbar-background {
+#urlbar > .urlbar-background,
+#searchbar-new > .urlbar-background{
 	margin: 0px !important;
 	animation: none !important;
 	background-image: url("image/dropdown.svg#dropdown") !important;
