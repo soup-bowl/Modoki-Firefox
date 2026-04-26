@@ -1,15 +1,18 @@
 @import "hacks/tabs_on_bottom_v2.css"; /* Firefox 133 and below? remove '_v2' */
-@import "hacks/tabs_on_bottom_menubar_on_top_patch.css";
+@import "hacks/tabs_on_bottom_menubar_on_top_patch.css" not (-moz-platform: macos);
+
 
 /* Hacks overrides*/
-#navigator-toolbox {
-	padding-top: calc(23px + var(--uc-titlebar-padding, 0px)) !important;
-}
+@media not(-moz-platform: macos){
+	
+	#navigator-toolbox {
+		padding-top: calc(23px + var(--uc-titlebar-padding, 0px)) !important;
+	}
 
-#toolbar-menubar {
-	height: 23px !important;
+	#toolbar-menubar {
+		height: 23px !important;
+	}
 }
-
 /* ! Hacks overrides*/
 
 
