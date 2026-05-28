@@ -17,6 +17,9 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
 
 ## 🐞 Bugs & Limitations
 
+> [!WARNING]  
+> Visual changes to the Firefox theme are happening quicker than I have the capacity to keep up with, so you may experience visual glitches as they continue. For the best experience, this theme should work well on **Firefox ESR** where changes happen at a lower frequency.
+
 * MacOS is **not supported**. **Linux** and **Windows** is supported.
   * This theme is primarily tested on **XFCE**. Other setups may encounter bugs.
 * This theme is **not compatible** with Firefox skins/themes, or a combined title bar.
@@ -24,7 +27,6 @@ This theme pairs beautifully with the **[Chicago95 theme for XFCE][c95]**.
   * on a PC set to dark mode, change the theme to light in Firefox Customise setting.
 * Vertical tabs are not supported.
 * The menu bar is expected to be visible. The bookmarks bar is optional.
-* There is some alignment issues with the URL bar, as Firefox keeps making changes to the layout (#32).
 * Due to the current reliance on low-res button images, this theme will look incredibly blurry on screen densities above 1080p.
 * Like the original Modern Modoki, not all icons are covered - especially not extensions.
 
